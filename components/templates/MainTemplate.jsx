@@ -9,7 +9,7 @@ const MainTemplate = ({ children }) => {
     <AnimationWrapper>
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </AnimationWrapper>
   );
 };

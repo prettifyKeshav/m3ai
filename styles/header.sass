@@ -6,8 +6,8 @@ header
     left: 0
     right: 0
     z-index: 5
-    background: $white
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px
+    // background: $white
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px
     &::before
         content: ""
         position: absolute
@@ -36,14 +36,14 @@ header
         flex-wrap: wrap
         align-items: center
         transition: 0.7s ease
-        justify-content: start
+        justify-content: space-between
         gap: 40px
         @include media(1024)
             gap: 40px
         @include media(360)
             gap: 29px
         .colA
-            flex: 0 1 92px
+            flex: 0 1 133px
             transition: 0.7s ease
             @include media(768)
                 padding: 10px 0 
@@ -101,188 +101,34 @@ header
 //         display: flex
 
 .colB
-    flex: 1
     .nav-list
         display: flex
-        justify-content: space-between
         align-items: center
-        @include media(768)
-            justify-content: right
-        .col
-            li
-                // padding: 20px 14px
-                a
-                    color: $primary
-                    font-weight: 500
-                    font-size: 16px
-                img
-                    width: 24px
-                    height: 24px
-                    object-fit: contain
-        .col:first-child
-            display: flex
-            gap: 20px
-            @include media(768)
-                display: none
+        gap: 40px
+        li
+            // padding: 30px 0
+            padding: 50px 0
             a
-                color: $text
-            li:first-child
-                a
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    gap: 5px
-                    padding: 20px 14px
-                    &.active
-                        background: #F6E7AD
-                        color: $primary
-
-            li:last-child
-                a
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    gap: 5px
-                    padding: 20px 14px
-                    &.active
-                        background: #F6E7AD
-
-        .col:last-child
-            display: flex
-            align-items: center
-            gap: 20px
-            @include media(540)
-                gap: 10px
-            li:last-child   
-                @include media(1024)
-                    display: none
-            li:nth-child(1)
-                @include media(768)
-                    display: none
-                a
-                    padding: 10px 13px
-                    border-radius: 25px
-                    background: #F3EBFA
-                    display: flex
-                    align-items: center
-                    justify-content: center
-                    gap: 10px
-            li:nth-child(2)
-                @include media(768)
-                    display: none
-                a
-                    padding: 10px 13px
-                    border-radius: 25px
-                    background: #F6E7AD
-                    display: flex
-                    align-items: center
-                    justify-content: center
-                    gap: 10px
-                    border: 1px dashed $primary
-            li:nth-child(3)
-                button
-                    border-radius: 5px
-                    padding: 2px 16px
-                    border: 1px solid $primary
-                    transition: 0.5s ease
-                    color: $primary
-                    font-weight: 500
-                    &:hover
-                        background: $primary
-                        color: $white
-                    @include media(540)
-                        font-size: 12px
-                a
-                    border-radius: 5px
-                    padding: 4px 16px
-                    border: 1px solid $primary
-                    &:hover
-                        background: $primary
-                        color: $white
-                    @include media(540)
-                        font-size: 12px
-            li:nth-child(4)
-                button
-                    border-radius: 5px
-                    padding: 2px 16px
-                    border: 1px solid $primary
-                    transition: 0.5s ease
-                    color: $primary
-                    font-weight: 500
-                    &:hover
-                        background: $primary
-                        color: $white
-                    @include media(540)
-                        font-size: 12px
-                a
-                    border-radius: 5px
-                    padding: 4px 16px
-                    border: 1px solid $primary
-                    &:hover
-                        background: $primary
-                        color: $white
-            li:nth-child(5)
-                a
-                    display: flex !important
-                    gap: 10px
-                    align-items: center
-                    figure
-                        background: #E7B806
-                        border-radius: 50%
-                        width: 40px
-                        height: 40px
-                        display: flex
-                        justify-content: center
-                        align-items: center
-                        img
-                            width: 24px 
-                            height: 24px
-                            object-fit: cover
-                    .no
-                        p:first-child
-                            font-weight: 500
-                            font-size: 14px
-                            color: $text
-                        p:last-child
-                            color: $secondary
-                            font-weight: 700
-                            font-size: 18px
-    .right-menu-list
-        display: flex
-        align-items: center
-        gap: 30px
-        li:first-child
-            a
-                display: flex
-                align-items: center
-                gap: 10px
-                font-weight: 700
-                img
-                    width: 21px 
-                    aspect-ratio: 1
-                p:first-child
-                    font-weight: 400
-                    text-align: center
-                    font-size: 13px
-                    color: $primary
-                p:last-child
-                    text-align: center
-                    font-weight: 500
-                    font-size: 16px
-                    color: $primary
-                    line-height: 1.5
-                    transition: 0.5s ease
+                font-weight: 600
+                color: white
+                font-size: 16px
+                line-height: 100%
+                transition: 0.3s ease
+                position: relative
                 &:hover
-                    p:last-child    
-                        color: $primary
-        li:last-child
-            a
-                padding: 10px
-                border: 1px solid white
-                width: 40px
-                height: 40px
-                border-radius: 25px
-
+                    color:#57DDE6
+                    &::before
+                        width: 90%
+                &::before
+                    content: ""
+                    position: absolute
+                    bottom: -10px
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 0%
+                    height: 2px
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, #57DDE6 55.77%, rgba(204, 204, 204, 0) 97.6%)
+                    transition: 0.3s ease
 
 
 .cl-wht-icon

@@ -1,11 +1,15 @@
+import Banner from '@/components/Banner'
 import React from 'react'
 
 const Hero = () => {
     return (
         <>
-            <div>
-                Hero Section
-            </div>
+            <Banner
+                className='home-banner'
+                videoSrc={"/assets/video/home-banner.mp4"}
+                h3tag={"Where Complex Challenges"}
+                h1tag={"Meet M3Ai"}
+            />
         </>
     )
 }

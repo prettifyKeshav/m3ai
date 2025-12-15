@@ -1,9 +1,9 @@
 import MainTemplate from "../components/templates/MainTemplate";
-// import "../app/global.css"
+import "../app/global.css"
 
 export const metadata = {
-  title: "Vedikant Flights &amp; Hotels",
-  description: "Vedikant Flights &amp; Hotels",
+  title: "M3AI",
+  description: "M3AI",
   icons: {
     icon: "/assets/icon/favicon/favicon.ico",
     shortcut: "/assets/icon/favicon/favicon.ico",

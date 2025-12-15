@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Banner({
     videoSrc,
     h1tag,
-    h2tag,
     h3tag,
+    h3tag2,
     description,
     buttonText,
     buttonLink = '#',
@@ -25,9 +25,9 @@ export default function Banner({
                 <div className="banner-wrapper">
                     <div className="container-fluid">
                         <div className="heading" >
-                            {h1tag && <h1 data-animate="fade-up">{h1tag}</h1>}
-                            {h2tag && <h2 data-animate="fade-up">{h2tag}</h2>}
                             {h3tag && <h3 data-animate="fade-up">{h3tag}</h3>}
+                            {h1tag && <h1 data-animate="fade-up">{h1tag}</h1>}
+                            {h3tag2 && <h3 data-animate="fade-up">{h3tag2}</h3>}
                             {description && <p data-animate="fade-up">{description}</p>}
 
                             {buttonText && (
@@ -37,11 +37,11 @@ export default function Banner({
                             )}
                             {imageSrc && (
                                 <div className="banner-image">
-                                    <Image 
-                                        src={imageSrc} 
-                                        alt={imageAlt} 
-                                        width={600} 
-                                        height={400} 
+                                    <Image
+                                        src={imageSrc}
+                                        alt={imageAlt}
+                                        width={600}
+                                        height={400}
                                         priority
                                     />
                                 </div>

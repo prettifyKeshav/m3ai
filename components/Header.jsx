@@ -24,60 +24,24 @@ const Header = () => {
 
                         <nav className="colB header__nav">
                             <ul className="nav-list">
-                                <div className="col">
-                                    <li>
-                                        <Link href="/flights" className="nav-link flights active">
-                                            <Image src="assets/icon/header-icon/flight.svg" alt="Flight icon" className="nav-link__icon svg" width={24} height={24} />
-                                            <span>Flights</span>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/hotels" className="nav-link">
-                                            <Image src="assets/icon/header-icon/hotel.svg" alt="Hotel icon" className="nav-link__icon svg" width={24} height={24} />
-                                            Hotels
-                                        </Link>
-                                    </li>
-                                </div>
-                                <div className="col">
-                                    <li>
-                                        <Link href="/packages" className="nav-link packages">
-                                            <Image src="assets/icon/header-icon/suitcase.svg" alt="Packages icon" className="nav-link__icon svg" width={24} height={24} />
-                                            Packages
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/offers" className="nav-link offers">
-                                            <Image src="assets/icon/header-icon/tag.svg" alt="Offers icon" className="nav-link__icon svg" width={24} height={24} />
-                                            Offers
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        {/* <Link href="/become" className="nav-link">
-                                            Become an Agent
-                                        </Link> */}
-                                        <button className="nav-link" onClick={openEnquire}>Become an Agent</button>
-                                    </li>
-                                    <li>
-                                        {/* <Link href="/login" className="nav-link">
-                                            Login
-                                        </Link> */}
-                                        <button className="nav-link" onClick={openLogin}>Login</button>
-                                    </li>
-                                    <li>
-                                        <Link href="tel:+917066692662">
-                                            <figure>
-                                                <Image src="assets/icon/header-icon/call.svg" width={24} height={24} alt="call icon"></Image>
-                                            </figure>
-                                            <div className="no">
-                                                <p>Book Online</p>
-                                                <p>+91 70 6669 2662</p>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                </div>
+                                <li>
+                                    <Link href="">About M3Ai</Link>
+                                </li>
+                                 <li>
+                                    <Link href="">M3Ai Services</Link>
+                                </li>
+                                 <li>
+                                    <Link href="">M3Ai Products</Link>
+                                </li>
+                                 <li>
+                                    <Link href="">Industries</Link>
+                                </li>
                             </ul>
                         </nav>
 
+                        <div className="colC">
+                            <Link href="" className="btn">Contact Us</Link>
+                        </div>
                         <button type="button" className="ham-btn" data-model=".ham-pop">
                             <span></span>
                             <span></span>

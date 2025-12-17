@@ -14,24 +14,25 @@ header
         top: 0
         left: 0
         right: 0
-        background: var(--gradient-a)
+        background: black
         height: 0
-        box-shadow: 0 2px 5px 2px rgba(99, 99, 99, .2)
+        box-shadow: 0 2px 5px 2px rgba(99, 99, 99, 0.2)
         z-index: -1
         transition: 0.7s ease
     &.header-fixed::before, &.header-fill::before
         height: 100%
 
     &.header-fixed .header-wrapper
-        padding: 15px 0
+        padding: 25px 0
         @include media(768)
             padding: 27px 0
         @include media(540)
             padding: 34px 0
+        .colA
+            flex: 0 1 123px
 
     .header-wrapper
-        // padding: 10px 0
-        padding: 0
+        padding: 40px 0
         display: flex
         flex-wrap: wrap
         align-items: center
@@ -107,7 +108,7 @@ header
         gap: 40px
         li
             // padding: 30px 0
-            padding: 50px 0
+            // padding: 50px 0
             a
                 font-weight: 600
                 color: white
@@ -115,6 +116,7 @@ header
                 line-height: 100%
                 transition: 0.3s ease
                 position: relative
+                padding: 5px 0
                 &:hover
                     color:#57DDE6
                     &::before
@@ -122,7 +124,7 @@ header
                 &::before
                     content: ""
                     position: absolute
-                    bottom: -10px
+                    bottom: -5px
                     left: 50%
                     transform: translate(-50%,-50%)
                     width: 0%
@@ -211,113 +213,90 @@ header
 // FOOTER Start========================>>>>
 footer
     position: relative
+    background: black
+    z-index: 1
+    border-top: 1px solid $secondary
     &::before
         content: ""
         position: absolute
-        top: 0
-        left: 0
-        height: 100%
-        width: 100%
-        background: $primary
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 298px
+        height: 283px
+        border-radius: 50%
+        background: #104AF7
+        filter: blur(150px)
         z-index: -1
     @include media(540)
         margin-bottom: var(--footerstrip)
-    .upper-footer
-        position: absolute
-        top: -10%
-        left: 0
-        width: 100%
-        @include media(1024)
-            top: -16%
-        .grid-box
-            height: 86px
-            border-radius: 50px
-            background: #E7B806
-            padding: 0 40px
-            display: grid
-            grid-template-columns: repeat(4,1fr)
-            gap: 40px
-            @include media(1024)
-                height: auto
-            @include media(768)
-                border-radius: 100px
-            @include media(540)
-                grid-template-columns: repeat(2,1fr)
-                border-radius: 20px
-                gap: 10px
-                padding: 0 10px
-            .col
-                // padding: 10px
-                display: flex
-                align-items: center
-                justify-content: space-between
-                &:nth-child(1)
-                    .flex
-                        padding-bottom: 0
-                &:nth-child(2)
-                    .flex
-                        padding-bottom: 0
-                .flex   
-                    display: flex
-                    align-items: center
-                    justify-content: space-between
-                    @include media(1024)
-                        flex-direction: column
-                        text-align: center
-                        gap: 10px
-                        padding: 30px 0
-                    figure
-                        width: 43px
-                        height: 43px
-                        flex: 0 1 20%
-                        img
-                            width: 100%
-                            height: 100%
-                            object-fit: contain
-                    .content
-                        flex: 0 1 75%
-                        h4
-                            font-weight: 700
-                            color: black
-                            font-size: 16px
-                            margin: 0 0 7px 0
-                            line-height: 18px
-                        p
-                            font-weight: 400
-                            font-size: 13px
-                            line-height: 15px
-                            color: black
     .main-footer
         padding: 80px 25px 50px
         display: flex
         gap: 60px
-        @include media(1024)
-            gap: 0px
-            padding: 150px 25px 50px
-        @include media(991)
-            flex-direction: column
-        @include media(768)
-            padding: 100px 25px 50px
-        @include media(540)     
-            padding: 200px 15px 0
         .colA
-            flex: 0 1 233px 
+            flex: 0 1 20%
             flex-direction: column
             display: flex
-            gap: 40px
-            @include media(991)
-                margin: 0 auto 20px
-            @include media(768)
-                flex: 0 1 163px
-                gap: 10px
-                margin: 0 auto 40px
-            @include media(540)     
-                margin: 0 auto 30px
-            figure
-                width: 134px
-                height: 134px
-                @include media(768)
-                    margin: auto
+            gap: 30px
+            .bottom-btn
+                display: grid
+                grid-template-columns: max-content
+                a:first-child
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    gap: 10px
+                    background: white
+                    margin-bottom: 13px
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 1
+                    color: black
+                    padding: 10px 26px
+                    width: fit-content
+                    border-radius: 25px
+                    transition: 0.5s ease
+                    &:hover
+                        background: $gradient-b
+                        color: white
+                        svg path
+                            stroke: white
+                    figure
+                        width: 24px
+                        height: 24px
+                        line-height: 0
+                        svg
+                            height: 100%
+                            width: 100%
+                            object-fit: contain
+                a:last-child
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    gap: 10px
+                    margin-bottom: 0px
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 1
+                    color: white
+                    padding: 10px 26px
+                    border-radius: 25px
+                    transition: 0.5s ease
+                    background: $gradient-b
+                    &:hover
+                        background: white
+                        color: black
+                        svg path
+                            fill: black
+                    figure
+                        width: 24px
+                        height: 24px
+                        line-height: 0
+                        svg
+                            height: 100%
+                            width: 100%
+                            object-fit: contain
             .social-icons
                 display: flex
                 justify-content: start
@@ -326,138 +305,105 @@ footer
                 @include media(540)
                     gap: 19px
                 a
-                    border: 1px solid white
-                    border-radius: 50%
                     display: flex
                     justify-content: center
                     align-items: center
                     height: 43px
                     width: 43px
                     &:hover
-                        background: white
                         svg
                             path
                                 fill: $primary
                     svg 
                         path
                             fill: white
-            img
-                height: fit-content
-                @include media(991)
+            .contact
+                h6
+                    font-weight: 500
+                    color: #FFFFFFB2
+                    font-size: 16px
+                    line-height: 1.2
+                    margin-bottom: 10px
+                a
+                    color: white
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 1.2
+        .colB
+            flex: 0 1 36%
+            // width: 100%
+            .flex-box
+                display: flex
+                justify-content: space-between
+                .flex-box-item:last-child
+                    width: 120px
+                .flex-box-item
+                    h6
+                        line-height: 1.2
+                        margin-bottom: 15px
+                        color: white
+                        font-weight: 600
+                        font-size: 18px
+                    ul
+                        li
+                            margin-bottom: 5px
+                            a
+                                font-weight: 500
+                                font-size: 16px
+                                line-height: 1.1
+                                color: #FFFFFF80
+
+                                transition: .5s ease
+                                &:hover
+                                    color: $primary
+                                    padding-left: 5px
+        .colC
+            .form-grid
+                --gaptb: 10px
+                margin-bottom: 50px
+                h6
+                    font-weight: 500
+                    font-size: 24px
+                    line-height: 1.1
+                    color: white
+                    max-width: 329px
+                    margin-bottom: 10px
+                .form-group
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                button
+                    color: $secondary
+                    outline: none
+                    font-weight: 600
+                    font-size: 14px
+
+                    display: flex
+                    align-items: center
+                    gap: 10px
+                    
+                    background-image: $gradient-b
+                    -webkit-background-clip: text
+                    background-clip: text
+                    -webkit-text-fill-color: transparent
+                    text-fill-color: transparent
+                    figure
+                        width: 16px
+                        height: 16px
+                        line-height: 1
+                        img
+                            width: 100%
+                            height: 100%
+                            object-fit: contain
+            figure
+                width: 397px
+                height: 138px
+                line-height: 1
+                img
+                    width: 100%
                     height: 100%
                     object-fit: contain
-        .colB
-            flex: 1
-            display: flex
-            gap: 20px
-            padding: 0 40px
-            @include media(1024)
-                padding: 0 0 0 40px
-            @include media(991)
-                padding: 0 20px
-            @include media(540)     
-                flex-wrap: wrap
-                padding: 0
-                gap: 10px 30px
-            .list
-                flex: 1 1 10%
-                // flex: 1 1 20%
-                @include media(540)     
-                    flex: 0 1 46%
-                h6
-                    line-height: 1.2
-                    margin-bottom: 22px
 
-                    font-weight: 700
-                    font-size: 16px
-                    line-height: 18px
-                    color: white
-                ul
-                    li
-                        margin-bottom: 5px
-                        a
-                            color: $text
-                            padding-bottom: 5px
-                            font-weight: 600
-                            font-size: 14px
-                            line-height: 16px
-                            color: $white
-                            transition: .5s ease
-                            // &:hover
-                            //     color: $primary
-                            //     padding-left: 5px
-                &:nth-child(1)
-                    ul
-                        li
-                            margin: 0 0 15px 0
-                            a
-                                color: $white
-                                font-weight: 700
-                                font-size: 25px
-                                line-height: 18px
-                &:nth-child(2)
-                    flex: 1 1
-                    ul li a
-                        font-weight: 400
-                        font-size: 16px
-                        line-height: 18px
-                &:nth-child(3)
-                    flex: 0 1 30%
-                    @include media(540)
-                        flex: 1
-                        margin-top: 20px
-                        margin-bottom: 20px
-                    ul
-                        display: flex
-                        flex-direction: column
-                        gap: 10px
-                        li
-                            a
-                                font-size: 14px
-                                font-weight: 500
-                                line-height: 20px
-
-                                svg
-                                    path 
-                                        fill: white
-                                    &:first-child
-                                        stroke: white
-                        li:first-child  
-                            span
-                                max-width: 80%
-                                @include media(540)
-                                    max-width: 100%
-                        .phone
-                            a
-                                font-weight: 600
-                                font-size: 25px
-                                display: flex
-                                justify-content: start
-                                align-items: center
-                                @include media(1024)
-                                    font-size: 18px
-                        .bottom-btn
-                            border-radius: 25px
-                            padding: 10px 24px
-                            background: #E7B806
-                            color: $primary
-                            display: flex
-                            justify-content: center
-                            align-items: center
-                            font-weight: 600
-                            font-size: 14px
-                            text-align: center
-                            text-transform: uppercase
-                            width: fit-content
-                            cursor: pointer
-                            @include media(540)
-                                padding: 10px 24px
-
-                    a
-                        display: flex
-                        gap: 10px
-                        svg
-                            flex: 0 1 30px
     .bottom-footer
         padding: 30px 25px
         display: flex

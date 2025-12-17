@@ -14,10 +14,10 @@
 }
 .form {
   --inputsize: 42px;
-  --labelbefore: var(--text);
-  --labelafter: var(--text);
-  --borderbefore: var(--text);
-  --borderafter: var(--black);
+  --labelbefore: #FFFFFFB2;
+  --labelafter: var(--white);
+  --borderbefore: #FFFFFF80;
+  --borderafter: var(--secondary);
   --labelfontbefore: 16px;
   --labelfontafter: 12px;
   --font: 500;
@@ -83,7 +83,7 @@
   border-radius: 0px !important;
   width: 100%;
   background: none;
-  color: var(--color);
+  color: var(--white);
   font-size: inherit;
   font-family: inherit;
   padding: 0 var(--paddingleftright);
@@ -392,10 +392,10 @@
   --headerheight: 93px;
   --headerfixed: 82px;
   --footerstrip: 64px;
-  --primary: #55A5D9;
+  --primary: #57DDE6;
   --secondary: #3853A3;
   --gradient-a: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%);
-  --gradient-b: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+  --gradient-b: linear-gradient(90deg, #3853A3 0%, #55A5D9 100%);
   --gradient-c: linear-gradient(270deg, #D8D8D8 0%, #EBEBEB 50%, #C5C5C5 100%);
   --gradient-d: linear-gradient(360deg, #E6E6E6 0%, #C6C6C6 100%);
   --gradient-e: linear-gradient(180deg, #E5E5E5 0%, #FFFFFF 46.5%, #F6F6F6 100%);
@@ -432,6 +432,9 @@
   }
 }
 
+body {
+  background: var(--black);
+}
 body::-webkit-scrollbar {
   width: 8px;
   background: var(--white);
@@ -1007,164 +1010,48 @@ button {
 }
 
 .btn {
-  --height: 38px;
-  --padding: 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  vertical-align: middle;
-  height: var(--height);
-  line-height: var(--height);
-  padding: 0 var(--padding);
-  overflow: hidden;
-  color: var(--white);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  transition: 0.5s ease;
-  caret-color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  padding: 14px 20px;
+  border: none;
+  outline: none;
   position: relative;
   border-radius: 25px;
-  z-index: 1;
-  font-weight: 500;
-}
-@media only screen and (max-width: 540px) {
-  .btn {
-    font-size: 14px;
-    --height: 30px;
-    --padding: 12px;
-  }
-}
-.btn:not([class*=border-]) {
-  background: var(--primary);
-  position: relative;
-}
-.btn:not([class*=border-])::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
   background: var(--gradient-b);
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.btn:not([class*=border-])::before {
+.btn:hover::after {
+  opacity: 0%;
+}
+.btn:hover figure svg path {
+  fill: var(--white) !important;
+}
+.btn::before {
+  content: attr(data);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1;
+  transition: 0.5s ease;
+}
+.btn::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  background: var(--gradient-a);
-}
-.btn:not([class*=border-])::before, .btn:not([class*=border-])::after {
+  inset: 2px;
+  border-radius: 25px;
+  background-color: var(--black);
   z-index: -1;
   transition: 0.5s ease;
-}
-.btn:not([class*=border-])::after {
-  opacity: 0;
-}
-.btn:not([class*=border-]):hover::before {
-  opacity: 0;
-}
-.btn:not([class*=border-]):hover::after {
-  opacity: 1;
-}
-.btn[class*=border-] {
-  border: 1px solid;
-}
-.btn.solid-white {
-  background: var(--white);
-  color: var(--black);
-}
-.btn.solid-white::before {
-  content: "";
-  display: none;
-}
-.btn.solid-white::after {
-  content: "";
-  display: none;
-}
-.btn svg path[stroke] {
-  stroke: currentColor;
-}
-.btn svg path[fill] {
-  fill: currentColor;
-}
-.btn.btn-white {
-  background: var(--white);
-  color: var(--black);
-}
-.btn.btn-white::before {
-  display: none;
-}
-.btn.btn-white::after {
-  display: none;
-}
-.btn.btn-white:hover {
-  background: var(--gradient-a);
-  color: var(--white);
-}
-.btn.border-gray {
-  border-color: var(--text);
-  color: var(--text);
-}
-.btn.border-black {
-  border-color: var(--black);
-  color: var(--black);
-}
-.btn.border-black:hover {
-  background: var(--gradient-a);
-  border-color: var(--primary);
-  color: var(--white);
-}
-.btn.sqr-radius {
-  border-radius: 5px;
-}
-.btn.border-white {
-  border-color: var(--white);
-  color: var(--white);
-  transition: 0.5s ease;
-}
-.btn.border-white:hover {
-  background: var(--gradient-a);
-  border-color: var(--primary);
-  color: var(--white);
-}
-.btn.btn-lrg {
-  --height: 48px;
-}
-@media only screen and (max-width: 540px) {
-  .btn.btn-lrg {
-    --height: 30px;
-  }
-}
-.btn.btn-wide {
-  --padding: 36px;
-}
-.btn.w-100 {
-  width: 100%;
-}
-.btn.btn-box {
-  --padding: 0px !important;
-  width: var(--height);
-}
-.btn.btn-btn {
-  border-radius: 5px;
 }
 
 .btn2 {

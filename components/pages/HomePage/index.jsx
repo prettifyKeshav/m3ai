@@ -4,6 +4,8 @@ import "@/styles/home/home.css"
 import Hero from './Hero'
 import AboutSection from './AboutSection'
 import ServiceSection from './ServiceSection'
+import ProductSection from './ProductSection'
+import PoweredImpact from './PoweredImpact'
 
 const HomePage = () => {
     return (
@@ -12,6 +14,8 @@ const HomePage = () => {
                 <Hero />
                 <AboutSection />
                 <ServiceSection />
+                <ProductSection />
+                <PoweredImpact />
             </main>
         </>
     )

@@ -7,7 +7,6 @@
                 // h1
 
 .home-secA
-    background: $black
     padding: 50px 0 
     position: relative
     z-index: 1
@@ -23,7 +22,6 @@
         filter: blur(180px)
         border-radius: 50%
         z-index: -1
-
     .flex-box
         display: flex
         justify-content: space-around
@@ -45,7 +43,28 @@
                 max-width: 467px
                 margin: 30px 0 20px 0
             a
-                color: $primary
+                color: none
+                outline: none
+                font-weight: 600
+                font-size: 14px
+
+                display: flex
+                align-items: center
+                gap: 10px
+                
+                background-image: $gradient-b
+                -webkit-background-clip: text
+                background-clip: text
+                -webkit-text-fill-color: transparent
+                text-fill-color: transparent
+                figure
+                    width: 16px
+                    height: 16px
+                    line-height: 1
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: contain
         .flex-box-item:last-child
             .col
                 width: 431px
@@ -67,9 +86,33 @@
                     line-height: 1.2
 
 .home-secB
-    background: $black
     padding: 50px 0
     position: relative
+    z-index: 1
+    &::before
+        content: ""
+        position: absolute
+        top: 40%
+        left: 80%
+        width: 351px
+        height: 351px
+        transform: translate(-50%,-50%)
+        background: #3853A3
+        filter: blur(180px)
+        border-radius: 50%
+        z-index: -1
+    &::after
+        content: ""
+        position: absolute
+        top: 90%
+        left: 20%
+        width: 351px
+        height: 351px
+        transform: translate(-50%,-50%)
+        background: #3853A3
+        filter: blur(180px)
+        border-radius: 50%
+        z-index: -1
     .heading
         position: relative
         z-index: 1
@@ -84,7 +127,6 @@
             align-items: center
             width: 177px
             margin: 40px auto 0
-
         .swiper-pagination
             color: $white
             pointer-events: none
@@ -92,9 +134,12 @@
                 font-weight: 600
                 font-size: 18px
                 line-height: 1.2
-
         .swiper-wrapper
             .swiper-slide
+                a:hover
+                    figure
+                        img
+                            scale: 1.1
                 figure
                     position: relative
                     border-radius: 10px
@@ -109,8 +154,311 @@
                         width: 100%
                         height: 100%
                         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)
+                        z-index: 1
                     img
                         height: 100%
                         width: 100%
                         object-fit: cover
-                
+                        transition: 0.5s ease
+                        z-index: -1
+                    h3
+                        position: absolute
+                        padding: 20px 30px
+                        top: 0
+                        right: 0
+
+                        font-family: Roobert
+                        font-weight: 600
+                        font-size: 13px
+                        line-height: 1.2
+                        color: $white
+                    figcaption
+                        position: absolute
+                        bottom: 0 
+                        left: 0
+                        width: 100%
+                        padding: 30px 
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        z-index: 1
+                        .left   
+                            h4
+                                font-weight: 700
+                                color: $white
+                                font-size: 24px
+                                line-height: 1.3
+                                margin-bottom: 7px
+                            p
+                                font-weight: 500
+                                font-size: 16px
+                                line-height: 1.2
+                                color: #FFFFFFB2
+                                max-width: 580px
+                        .right
+                            width: 41px
+                            height: 41px
+                            border-radius: 50px
+                            background: $white
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            padding: 10px
+
+.home-secC
+    padding: 50px 0
+    position: relative
+    z-index: 1
+    &::before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 351px
+        height: 351px
+        background: #104AF7
+        filter: blur(210px)
+        border-radius: 50%
+        z-index: -1
+    .flex-box
+        display: flex
+        justify-content: center
+        gap: 100px
+        align-items: center
+        padding: 50px 0 0 0
+        @keyframes floatUpDown 
+            0% 
+                transform: translateY(0)
+            50% 
+                transform: translateY(-40px)
+            100% 
+                transform: translateY(0)
+        .flex-box-item:first-child
+            width: 455px
+            height: 428px
+            position: 1
+            position: relative
+            figure
+                .up-im
+                    width: 453px
+                    height: 382px
+                    object-fit: contain
+                    position: relative
+                    z-index: 2
+                    animation: floatUpDown 3s ease-in-out infinite
+                    will-change: transform
+                    top: 30px
+                .lw-im
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    object-fit: contain
+                    z-index: 1
+                    height: fit-content
+                    width: fit-content
+        .flex-box-item:last-child
+            max-width: 521px
+            .heading
+                position: relative
+                &::before
+                    content: ""
+                    position: absolute
+                    bottom: -15px
+                    left: 0
+                    height: 3px
+                    width: 60px
+                    background: #1B9BD5
+                h3
+                    font-weight: 300
+                    font-size: 48px
+                    line-height: 1
+                    color: $white
+                    text-transform: uppercase
+                    position: relative
+                    width: fit-content
+                    margin-bottom: 5px
+                    &::before
+                        content: "R"
+                        position: absolute
+                        top: 0
+                        right: -20%
+                        border-radius: 50%
+                        border: 2px solid $white
+                        width: 25px
+                        height: 25px
+                        font-size: 13px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                p
+                    color: $white
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 1
+            .description
+                font-weight: 500
+                font-size: 16px
+                line-height: 1.3
+                margin: 30px 0 30px 0 
+                color: #FFFFFFB2
+            .product-swiper
+                position: relative
+                .swiper
+                    .swiper-slide
+                        padding: 14px 0 20px 20px
+                        background: $white
+                        border-radius: 5px
+                        h4
+                            font-weight: 600
+                            font-size: 16px
+                            line-height: 1.2
+                            margin-bottom: 5px
+                        p
+                            color: #000000B2
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 1.1
+                .swiper-nav
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 110%
+                    button
+                        transition: 0.5s ease
+                    .swiper-button-disabled
+                        opacity: 0
+            a
+                // padding: 10px 20px
+                font-weight: 700
+                font-size: 16px
+                line-height: 1
+                display: inline-block
+                margin-top: 25px
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 10px
+                width: fit-content
+                &:hover
+                    &::before
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 1
+                        // color: $white
+                        background: $white
+                        -webkit-background-clip: text
+                        color: transparent
+                        transition: 0.5s ease
+                &::before
+                    content: attr(data)
+                    background: $gradient-b
+                    -webkit-background-clip: text
+                    color: transparent
+                    transition: 0.5s ease
+                figure
+                    width: 16px
+                    height: 16px
+                    svg
+                        height: 100%
+                        width: 100%
+                        object-fit: contain
+                        path
+                            fill: $secondary
+
+.home-secD
+    padding: 50px 0
+    position: relative
+    z-index: 1
+    &::before
+        content: ""
+        position: absolute
+        top: 70%
+        left: 50%
+        width: 351px
+        height: 351px
+        transform: translate(-50%,-50%)
+        background: #104AF7
+        filter: blur(220px)
+        border-radius: 50%
+        z-index: -1
+    .heading
+        position: relative
+        z-index: 1
+    .swiper
+        margin: 60px 0 40px 0
+        .bottom-nav
+            border: 1px solid #FFFFFF
+            border-radius: 25px
+            padding: 5px 10px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 177px
+            margin: 40px auto 0
+        .swiper-pagination
+            color: $white
+            pointer-events: none
+            span
+                font-weight: 600
+                font-size: 18px
+                line-height: 1.2
+        .swiper-wrapper
+            .swiper-slide
+                position: relative
+                border-radius: 10px
+                overflow: hidden
+                border: 1px solid #AEAEAE26
+                // background: linear-gradient(#000, #000) padding-box, linear-gradient( 232.6deg, rgba(174, 174, 174, 0.15) 5.82%, rgba(255, 255, 255, 0.5) 38.74%, rgba(174, 174, 174, 0.15) 71.66% ) border-box
+                   // padding: 20px
+                height: fit-content
+                text-align: center
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 80%
+                    left: 80%
+                    width: 85px
+                    height: 85px
+                    transform: translate(-50%,-50%)
+                    background: white
+                    filter: blur(60px)
+                    border-radius: 50%
+                    z-index: -1
+                &::after
+                    content: ""
+                    position: absolute
+                    top: 20%
+                    left: 20%
+                    width: 85px
+                    height: 85px
+                    transform: translate(-50%,-50%)
+                    background: white
+                    filter: blur(60px)
+                    border-radius: 50%
+                    z-index: -1
+                a
+                    padding: 20px
+                    position: relative
+                    z-index: 1
+                figure
+                    width: 60px
+                    height: 60px
+                    line-height: 0
+                    margin: auto
+                    margin-bottom: 20px
+                    img
+                        height: 100%
+                        width: 100%
+                        object-fit: contain
+                h4
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 1.2
+                    color: $white
+
+

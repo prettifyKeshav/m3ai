@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-// import Link from 'next/link';
+import Link from 'next/link';
 import Image from 'next/image';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,19 +13,65 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 const ServiceSection = () => {
+
+    const Service_data = [
+        {
+            "link": "",
+            "image": "/assets/images/service/service-img1.jpg",
+            "title": "AI workflows orchestration",
+            "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
+
+        },
+        {
+            "link": "",
+            "image": "/assets/images/service/service-img2.jpg",
+            "title": "AI workflows orchestration",
+            "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
+
+        },
+        {
+            "link": "",
+            "image": "/assets/images/service/service-img3.jpg",
+            "title": "AI workflows orchestration",
+            "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
+
+        },
+        {
+            "link": "",
+            "image": "/assets/images/service/service-img2.jpg",
+            "title": "AI workflows orchestration",
+            "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
+        },
+        {
+            "link": "",
+            "image": "/assets/images/service/service-img3.jpg",
+            "title": "AI workflows orchestration",
+            "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
+
+        },
+        {
+            "link": "",
+            "image": "/assets/images/service/service-img2.jpg",
+            "title": "AI workflows orchestration",
+            "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
+        }
+    ]
+
+
     return (
         <>
             <div className="home-secB">
                 <div className="container">
-                    <div className="heading">
+                    <div className="heading" data-animate="zoom-in">
                         <h2>Where AI Automation
                             Accelerates Your Growth</h2>
                     </div>
 
                     <Swiper
                         loop={true}
-                        slidesPerView={1.6}
+                        slidesPerView={1.5}
                         spaceBetween={40}
+                        speed={900}
                         centeredSlides={true}
                         pagination={{ type: "fraction" }}
                         navigation={{
@@ -34,30 +80,36 @@ const ServiceSection = () => {
                         }}
                         modules={[Pagination, Navigation]}
                         className="mySwiper"
+                        data-animate="zoom-in"
                     >
-                        <SwiperSlide>
-                            <figure>
-                                <Image src="/assets/images/service/service-img1.jpg" width={780} height={400} alt="service img" />
-                            </figure>
-                        </SwiperSlide>
 
-                        <SwiperSlide>
-                            <figure>
-                                <Image src="/assets/images/service/service-img2.jpg" width={780} height={400} alt="service img" />
-                            </figure>
-                        </SwiperSlide>
+                        {
+                            Service_data.map((item, index) => {
+                                return (
+                                    <SwiperSlide key={index}>
+                                        <Link href={item.link}>
+                                            <figure>
+                                                <Image src={item.image} width={780} height={400} alt="service img" />
+                                                <figcaption>
+                                                    <div className="left">
+                                                        <h4>{item.title}</h4>
+                                                        <p>{item.description}</p>
+                                                    </div>
+                                                    <div className="right">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width={1024} height={1024} viewBox="0 0 1024 1024">
+                                                            <path fill="#000" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"></path>
+                                                            <path fill="#000" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </figcaption>
+                                                <h3>Service</h3>
+                                            </figure>
+                                        </Link>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
 
-                        <SwiperSlide>
-                            <figure>
-                                <Image src="/assets/images/service/service-img3.jpg" width={780} height={400} alt="service img" />
-                            </figure>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <figure>
-                                <Image src="/assets/images/service/service-img2.jpg" width={780} height={400} alt="service img" />
-                            </figure>
-                        </SwiperSlide>
 
                         {/* Custom Navigation */}
                         <div className="bottom-nav">

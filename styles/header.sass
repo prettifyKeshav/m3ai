@@ -242,7 +242,7 @@ footer
             .bottom-btn
                 display: grid
                 grid-template-columns: max-content
-                a:first-child
+                button
                     display: flex
                     justify-content: center
                     align-items: center
@@ -549,7 +549,7 @@ footer
                         h5
                             font-size: 30px
                             color: $primary
-                            transition: .5s ease 
+                            transition: 0.5s ease
                         .arrow
                             width: 15px
                             height: 15px
@@ -627,12 +627,51 @@ footer
 
 .enquire-pop
     right: 0
-    transform: translateX(100%)
     transition: .5s ease
-    background: #fff
-    // background: linear-gradient(180deg, #d7ccff 2%, #fff 89%)
+    background:#030816 !important
+    max-width: 735px !important
+    height: fit-content
+    max-height: 500px
+    transform: translate(-50%, -50%)
+    top: 50%
+    left: 50%
+    scale: 0
+    z-index: 1
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    &::before
+        content: ""
+        filter: blur(170px)
+        z-index: -1
+        background: #57DDE6
+        border-radius: 50%
+        width: 251px
+        height: 251px
+        position: absolute
+        top: 80%
+        left: 30%
+        transform: translate(-50%, -50%)
+    &::after
+        content: ""
+        filter: blur(170px)
+        z-index: -1
+        background: #3853A3
+        border-radius: 50%
+        width: 251px
+        height: 251px
+        position: absolute
+        top:20%
+        left: 80%
+        transform: translate(-50%, -50%)
     &.is-open
-        transform: translateX(0%)
+        transform: translate(-50%, -50%)
+        top: 50%
+        left: 50%
+        scale: 1
+    .close
+        svg path 
+            stroke: white !important
     .model-body
         margin-top: 40px
         overflow-y: auto
@@ -669,10 +708,10 @@ footer
         .form
             --gaptb: 15px 
             --item: 1
-            --labelbefore: var(--text)
-            --labelafter: #000
-            --borderbefore: var(--text)
-            --borderafter: #000
+            // --labelbefore: var(--text)
+            // --labelafter: #000
+            // --borderbefore: var(--text)
+            --borderafter: #57dde6
         .btn2
             color: $white
             width: fit-content
@@ -1252,7 +1291,6 @@ footer
         border-bottom: 1px solid #f0f0f0
         &:last-child
             border-bottom: none
-    .days-grid
     .day-number
         font-size: 12px
     .day-price

@@ -62,7 +62,7 @@ export default function EnquirePop() {
                         <textarea name="" id="" className="form-control"></textarea>
                         <label htmlFor="">Message</label>
                     </div>
-                    <button className="btn2 ">Submit Now</button>
+                    <button className="btn2">Submit Now</button>
                 </div>
             </div>
         </div>

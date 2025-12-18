@@ -1,0 +1,114 @@
+@import '../_var'
+
+.banner
+    &.service-banner
+        &::before
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%),linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),linear-gradient(180deg, rgba(0, 0, 0, 0) 71.15%, #000000 100%),linear-gradient(360deg, rgba(0, 0, 0, 0) 64.42%, rgba(0, 0, 0, 0.85) 100%)
+        .banner-wrapper
+            bottom: 34%
+            .heading
+                h3
+                    font-weight: 600
+                    font-size: 20px
+
+.service-secA
+    padding: 60px 0
+    position: relative
+    z-index: 1
+    &::before
+        content: ""
+        position: absolute
+        top: 40%
+        left: 40%
+        width: 351px
+        height: 351px
+        transform: translate(-50%,-50%)
+        background: #3853A3
+        filter: blur(180px)
+        border-radius: 50%
+        z-index: -1
+    &::after
+        content: ""
+        position: absolute
+        top: 90%
+        left: 84%
+        width: 351px
+        height: 351px
+        transform: translate(-50%,-50%)
+        background: #3853A3
+        filter: blur(180px)
+        border-radius: 50%
+        z-index: -1
+    .grid-box
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        gap: 20px
+        .grid-box-item
+            height: 350px
+            border-radius: 10px
+            overflow: hidden
+            background: #FFFFFF1A
+            transition: 0.5s ease
+            padding: 30px
+
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &:hover
+                background: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
+                .main-icon
+                    svg path
+                        fill: $white
+                .content
+                    figure
+                        margin: 60px 0 0 auto
+                        scale: 1
+
+            .main-icon
+                height: 54px
+                width: 54px
+                img,svg
+                    height: 100%
+                    width: 100%
+                    object-fit: contain
+                    path
+                        fill:  #55A5D9
+                        transition: 0.5s ease
+
+            .content
+                h4
+                    font-weight: 700
+                    color: $white
+                    font-size: 24px
+                    line-height: 28px
+                p
+                    font-weight: 500
+                    color: #FFFFFFB2
+                    font-size: 16px
+                    line-height: 22px
+                figure
+                    height: 41px
+                    width: 41px
+                    background: $white
+                    border-radius: 50%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 10px
+                    margin: 0px 0 0 auto
+                    scale: 0
+                    transition: 0.5s ease
+
+                    svg
+                        height: 100%
+                        width: 100%
+                        object-fit: contain
+
+
+
+
+
+
+
+
+

@@ -40,7 +40,7 @@ const Header = () => {
                                     <Link href="about-us">About M3Ai</Link>
                                 </li>
                                 <li>
-                                    <Link href="services">M3Ai Services</Link>
+                                    <Link href="service">M3Ai Services</Link>
                                 </li>
                                 <li>
                                     <Link href="products">M3Ai Products</Link>

@@ -531,18 +531,109 @@ button
     //     border-radius: 5px
 
 .btn2
-    border-radius: 5px
-    padding: 4px 16px
-    border: 1px solid $secondary
-    background: $secondary
-    color: $white
+    --height: 38px
+    --padding: 24px
     display: inline-flex
-    margin-top: 40px
-    transition: 0.5s ease
+    align-items: center
+    justify-content: center
+    gap: 10px
+    vertical-align: middle
+    height: var(--height)
+    line-height: var(--height)
+    padding: 0 var(--padding)
+    overflow: hidden
+    color: $white
+    appearance: none
+    transition: .5s ease
+    caret-color: transparent
+    user-select: none
+    position: relative
+    border-radius: 25px
+    z-index: 1
     &:hover
-        background: none
-        color: $secondary
-
+        color: white !important
+    @include font(500)
+    @include media(540)
+        font-size: 14px
+        --height: 30px
+        --padding: 12px
+    &:not([class*="border-"])
+        background: $primary
+        @include after($gradient-b)
+        @include before($gradient-a)
+        &::before,&::after
+            z-index: -1
+            transition: .5s ease
+        &::after
+            opacity: 0
+        &:hover
+            &::before
+                opacity: 0
+            &::after
+                opacity: 1
+    &[class*="border-"]
+        border: 1px solid
+    &.solid-white
+        background: $white
+        color: $black
+        &::before 
+            content: ""
+            display: none
+        &::after
+            content: ""
+            display: none
+    svg 
+        path
+            &[stroke]
+                stroke: currentColor
+            &[fill]
+                fill: currentColor
+    &.btn-white
+        background: $white
+        color: $black
+        // font-family: $poppins
+        &::before
+            display: none
+        &::after
+            display: none
+        &:hover
+            background: var(--gradient-a)
+            color: $white
+    &.border-gray
+        border-color: $text
+        color: $text
+    &.border-black
+        border-color: $black
+        color: $black
+        // font-family: $poppins
+        &:hover
+            background: var(--gradient-a)
+            border-color: var(--primary)
+            color: $white
+    &.sqr-radius
+        border-radius: 5px
+    &.border-white
+        border-color: $white
+        color: $white
+        // font-family: $poppins
+        transition: .5s ease
+        &:hover
+            background: var(--gradient-a)
+            border-color: var(--primary)
+            color: $white
+    &.btn-lrg
+        --height: 48px
+        @include media(540)
+            --height: 30px
+    &.btn-wide
+        --padding: 36px
+    &.w-100
+        width: 100%
+    &.btn-box
+        --padding: 0px !important
+        width: var(--height)
+    &.btn-btn
+        border-radius: 5px
 .white-border
     background: transparent 
     padding: 5px 15px

@@ -5,11 +5,11 @@ const Hero = () => {
     return (
         <>
             <Banner
-                className='about-banner'
+                className='product-banner'
                 mediaSrc="video"
-                videoSrc={"/assets/video/about-banner.mp4"}
-                h1tag={"About M3Ai"}
-                h3tag2={"Enterprise AI. Engineered for real-world impact"}
+                videoSrc={"/assets/video/product-banner.mp4"}
+                h1tag={"Products"}
+                h3tag2={"Simplifying work to amplify outcomes"}
             />
         </>
     )

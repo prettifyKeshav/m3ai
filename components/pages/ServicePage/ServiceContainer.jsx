@@ -6,40 +6,40 @@ const ServiceContainer = () => {
 
     const Service_Data = [
         {
-            "link": "/",
+            "link": "/service-detail",
             "icon": "/assets/images/service/listing/1.svg",
             "title": "AI Workflows Orchestration",
             "description": "AI workflows orchestration empowers organizations to automate.",
         },
         {
-            "link": "/",
+            "link": "/service-detail",
             "icon": "/assets/images/service/listing/2.svg",
             "title": "Data Intelligence",
             "description": "AI workflows orchestration empowers organizations to automate.",
         },
         {
-            "link": "/",
+            "link": "/service-detail",
             "icon": "/assets/images/service/listing/3.svg",
             "title": "AData Analytics",
             "description": "AI workflows orchestration empowers organizations to automate.",
         },
 
         {
-            "link": "/",
+            "link": "/service-detail",
             "icon": "/assets/images/service/listing/4.svg",
             "title": "AI Native Product Development",
             "description": "AI workflows orchestration empowers organizations to automate.",
         },
 
         {
-            "link": "/",
+            "link": "/service-detail",
             "icon": "/assets/images/service/listing/5.svg",
             "title": "Agentic Architecture",
             "description": "AI workflows orchestration empowers organizations to automate.",
         },
 
         {
-            "link": "/",
+            "link": "/service-detail",
             "icon": "/assets/images/service/listing/6.svg",
             "title": "Custom SLMs",
             "description": "AI workflows orchestration empowers organizations to automate.",

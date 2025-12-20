@@ -104,9 +104,185 @@
                         width: 100%
                         object-fit: contain
 
+// Service Detail Sass Start ===============================================
 
+.banner
+    &.service-detail-banner
+        &::before
+            // background: none
+            background: linear-gradient(270deg, #0000 34.8%, #000000b3 171.8%), linear-gradient(360deg, #0000 59.46%, #0006 90.86%)
 
+        .bg
+            figure
+                height: 100%
+                width: 100%
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: cover
+            .banner-wrapper
+                bottom: 35%
+                .heading
+                    max-width: 600px
+                    text-align: left
+                    h1
+                        font-weight: 600
+                        font-size: 48px
+                        line-height: 1
+                        width: fit-content
+                        text-align: left
+                        margin-bottom: 15px
+                    h3
+                        font-weight: 600
+                        color: $white
+                        font-size: 16px
 
+.service-detail-secA
+    background: linear-gradient(90deg, #222222 0%, #050829 100%)
+    overflow: hidden
+    .flex-box
+        // display: flex
+        justify-content: space-between
+        gap: 20px
+        .flex-box-item:first-child
+            flex: 0 1 230px
+            h4
+                color: #57DDE6
+                font-weight: 600
+                font-size: 16px
+                padding: 30px 0 
+        .flex-box-item:last-child
+            flex: 1
+            .product-swiper
+                position: relative
+                .swiper
+                    .swiper-slide
+                        padding: 14px 0 20px 20px
+                        background: $white
+                        border-radius: 5px
+                        h4
+                            font-weight: 600
+                            font-size: 16px
+                            line-height: 1.2
+                            margin-bottom: 5px
+                        p
+                            color: #000000B2
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 1.1
+                .swiper-nav
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 105%
+                    button
+                        transition: 0.5s ease
+                    .swiper-button-disabled
+                        opacity: 0
+
+.service-detail-secB
+    padding: 70px 0
+    .flex-box
+        display: flex
+        justify-content: space-between
+        gap: 40px
+        .flex-box-item:first-child
+            flex: 1
+            .content
+                max-width: 980px
+                margin: auto
+                padding: 0 0 50px 0 
+                @include media(540)
+                    max-width: 90%
+                h1
+                    font-size: 48px
+                    margin-bottom: 25px
+                    margin: 50px 0
+                h2
+                    font-size: 28px
+                    font-weight: 500
+                    color: #FFFFFF
+                    margin: 30px 0 20px 0
+                h3
+                    font-size: 22px
+                    font-weight: 500
+                    margin: 30px 0 10px 0
+                    color: #ffffff
+                h4
+                    font-weight: 500
+                    margin: 30px 0 10px 0
+                    color: #ffffff
+                    font-size: 20px
+
+                h5
+                    font-size: 17px
+                    color: #FFFFFF
+                    font-weight: 600
+                    margin: 20px 0 10px 0
+                h6
+                    font-size: 15px
+                p, li
+                    color: #FFFFFFB2
+                    text-align: justify
+                    font-size: 16px
+                a
+                    color: var(--text)
+                    &:hover
+                        text-decoration: underline
+                p
+                    margin-bottom: 20px
+                    color: #FFFFFFB2
+                ul
+                    margin-bottom: 20px
+                    padding-left: 35px
+                    @include media(540)
+                        padding-left: 0
+                    li
+                        position: relative
+                        padding-left: 35px
+                        &:not(:last-child)
+                            margin-bottom: 6px
+                        &::before
+                            content: ""
+                            position: absolute
+                            top: 8px
+                            left: 0
+                            width: 10px
+                            aspect-ratio: 1
+                            border-radius: 50%
+                            background: linear-gradient(0deg, #9F2FFF 0%, #0BB1D3 100%)
+                        h3
+                            font-size: 22px
+                            font-weight: 500
+                            margin: 30px 0 10px 0
+                            color: #ffffff
+                li
+                    position: relative
+                    padding-left: 35px
+                    &:not(:last-child)
+                        margin-bottom: 6px
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: 8px
+                        left: 0
+                        width: 10px
+                        aspect-ratio: 1
+                        border-radius: 50%
+                        background: linear-gradient(0deg, #9F2FFF 0%, #0BB1D3 100%)
+
+        .flex-box-item:last-child
+            width: 355px
+            height: 658px
+            border-radius: 15px
+            padding: 30px
+            background: #FFFFFF1A
+            position: sticky
+            top: 0
 
 
 

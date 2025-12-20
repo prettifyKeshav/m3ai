@@ -1,0 +1,215 @@
+@import '../_var'
+
+.banner
+    &.product-banner
+        &::before
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%),linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),linear-gradient(180deg, rgba(0, 0, 0, 0) 71.15%, #000000 100%),linear-gradient(360deg, rgba(0, 0, 0, 0) 64.42%, rgba(0, 0, 0, 0.85) 100%)
+        .banner-wrapper
+            bottom: 34%
+            .heading
+                h3
+                    font-weight: 600
+                    font-size: 20px
+
+.product-secA
+    padding: 50px 0 50px 0
+    overflow: hidden
+    .flex-box1
+        padding: 50px 0 50px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 90px
+        position: relative
+        z-index: 1
+        &::before
+            content: ""
+            position: absolute
+            top: 60%
+            left: 30%
+            transform: translate(-50%,-50%)
+            width: 351px
+            height: 351px
+            background: #3853A3
+            filter: blur(160px)
+            border-radius: 50%
+            z-index: -1
+        .flex-box-item
+            figure
+                width: 522px
+                height: 318px
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: contain
+        .flex-box-item
+            .heading
+                position: relative
+                text-align: left
+                margin-bottom: 20px
+                &::before
+                    content: ""
+                    position: absolute
+                    bottom: -12%
+                    left: 0
+                    width: 65px
+                    height: 3px
+                    background: #1B9BD5
+                h2
+                    font-weight: 300
+                    font-size: 48px
+                    line-height: 1.2
+                    margin: initial
+                    text-align: left
+                    max-width: initial
+                p
+                    font-weight: 600
+                    color: #FFFFFFB2
+                    font-size: 18px
+                    line-height: 1.1
+            .desc
+                font-weight: 500
+                font-size: 16px
+                line-height: 1.4
+                max-width: 511px
+                color: #FFFFFFB2
+            .btn
+                // padding: 10px 20px
+                font-weight: 700
+                font-size: 16px
+                line-height: 1
+                display: inline-block
+                margin-top: 25px
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 10px
+                width: fit-content
+                margin-top: 30px
+                &:hover
+                    &::before
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 1
+                        // color: $white
+                        background: $white
+                        -webkit-background-clip: text
+                        color: transparent
+                        transition: 0.5s ease
+                &::before
+                    content: attr(data)
+                    background: $gradient-b
+                    -webkit-background-clip: text
+                    color: transparent
+                    transition: 0.5s ease
+                figure
+                    width: 16px
+                    height: 16px
+                    svg
+                        height: 100%
+                        width: 100%
+                        // object-fit: contain
+                        object-fit: cover
+                        path
+                            fill: $secondary
+    .flex-box2
+        padding: 50px 0 50px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 90px
+        position: relative
+        z-index: 1
+        &::before
+            content: ""
+            position: absolute
+            top: 60%
+            left: 80%
+            transform: translate(-50%,-50%)
+            width: 351px
+            height: 351px
+            background: #3853A3
+            filter: blur(160px)
+            border-radius: 50%
+            z-index: -1
+        .flex-box-item
+            figure
+                width: 522px
+                height: 318px
+                border-radius: 10px
+                overflow: hidden
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: cover
+        .flex-box-item
+            .heading
+                position: relative
+                text-align: left
+                margin-bottom: 20px
+                &::before
+                    content: ""
+                    position: absolute
+                    bottom: -12%
+                    left: 0
+                    width: 65px
+                    height: 3px
+                    background: #1B9BD5
+                h2
+                    font-weight: 300
+                    font-size: 48px
+                    line-height: 1.2
+                    margin: initial
+                    text-align: left
+                    max-width: initial
+                p
+                    font-weight: 600
+                    color: #FFFFFFB2
+                    font-size: 18px
+                    line-height: 1.1
+            .desc
+                font-weight: 500
+                font-size: 16px
+                line-height: 1.4
+                max-width: 511px
+                color: #FFFFFFB2
+            .btn
+                // padding: 10px 20px
+                font-weight: 700
+                font-size: 16px
+                line-height: 1
+                display: inline-block
+                margin-top: 25px
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 10px
+                width: fit-content
+                margin-top: 30px
+                &:hover
+                    &::before
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 1
+                        // color: $white
+                        background: $white
+                        -webkit-background-clip: text
+                        color: transparent
+                        transition: 0.5s ease
+                &::before
+                    content: attr(data)
+                    background: $gradient-b
+                    -webkit-background-clip: text
+                    color: transparent
+                    transition: 0.5s ease
+                figure
+                    width: 16px
+                    height: 16px
+                    svg
+                        height: 100%
+                        width: 100%
+                        object-fit: contain
+                        path
+                            fill: $secondary
+
+

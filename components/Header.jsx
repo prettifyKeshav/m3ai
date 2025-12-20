@@ -43,10 +43,10 @@ const Header = () => {
                                     <Link href="service">M3Ai Services</Link>
                                 </li>
                                 <li>
-                                    <Link href="products">M3Ai Products</Link>
+                                    <Link href="product">M3Ai Products</Link>
                                 </li>
                                 <li>
-                                    <Link href="industries">Industries</Link>
+                                    <Link href="industrie">Industries</Link>
                                 </li>
                             </ul>
                         </nav>

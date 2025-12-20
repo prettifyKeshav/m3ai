@@ -123,4 +123,223 @@
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.banner.service-detail-banner::before {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 34.8%, rgba(0, 0, 0, 0.7019607843) 171.8%), linear-gradient(360deg, rgba(0, 0, 0, 0) 59.46%, rgba(0, 0, 0, 0.4) 90.86%);
+}
+.banner.service-detail-banner .bg figure {
+  height: 100%;
+  width: 100%;
+}
+.banner.service-detail-banner .bg figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner.service-detail-banner .bg .banner-wrapper {
+  bottom: 35%;
+}
+.banner.service-detail-banner .bg .banner-wrapper .heading {
+  max-width: 600px;
+  text-align: left;
+}
+.banner.service-detail-banner .bg .banner-wrapper .heading h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.banner.service-detail-banner .bg .banner-wrapper .heading h3 {
+  font-weight: 600;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.service-detail-secA {
+  background: linear-gradient(90deg, #222222 0%, #050829 100%);
+  overflow: hidden;
+}
+.service-detail-secA .flex-box {
+  justify-content: space-between;
+  gap: 20px;
+}
+.service-detail-secA .flex-box .flex-box-item:first-child {
+  flex: 0 1 230px;
+}
+.service-detail-secA .flex-box .flex-box-item:first-child h4 {
+  color: #57DDE6;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 30px 0;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child {
+  flex: 1;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper {
+  position: relative;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide {
+  padding: 14px 0 20px 20px;
+  background: var(--white);
+  border-radius: 5px;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide p {
+  color: rgba(0, 0, 0, 0.6980392157);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav button {
+  transition: 0.5s ease;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav .swiper-button-disabled {
+  opacity: 0;
+}
+
+.service-detail-secB {
+  padding: 70px 0;
+}
+.service-detail-secB .flex-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child {
+  flex: 1;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content {
+  max-width: 980px;
+  margin: auto;
+  padding: 0 0 50px 0;
+}
+@media only screen and (max-width: 540px) {
+  .service-detail-secB .flex-box .flex-box-item:first-child .content {
+    max-width: 90%;
+  }
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  margin: 50px 0;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 30px 0 20px 0;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+  color: #ffffff;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content h4 {
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+  color: #ffffff;
+  font-size: 20px;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content h5 {
+  font-size: 17px;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content h6 {
+  font-size: 15px;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content p, .service-detail-secB .flex-box .flex-box-item:first-child .content li {
+  color: rgba(255, 255, 255, 0.6980392157);
+  text-align: justify;
+  font-size: 16px;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content a {
+  color: var(--text);
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content a:hover {
+  text-decoration: underline;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content p {
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content ul {
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+@media only screen and (max-width: 540px) {
+  .service-detail-secB .flex-box .flex-box-item:first-child .content ul {
+    padding-left: 0;
+  }
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content ul li {
+  position: relative;
+  padding-left: 35px;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content ul li:not(:last-child) {
+  margin-bottom: 6px;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content ul li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #9F2FFF 0%, #0BB1D3 100%);
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content ul li h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+  color: #ffffff;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content li {
+  position: relative;
+  padding-left: 35px;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content li:not(:last-child) {
+  margin-bottom: 6px;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child .content li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #9F2FFF 0%, #0BB1D3 100%);
+}
+.service-detail-secB .flex-box .flex-box-item:last-child {
+  width: 355px;
+  height: 658px;
+  border-radius: 15px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1019607843);
+  position: sticky;
+  top: 0;
 }/*# sourceMappingURL=service.css.map */

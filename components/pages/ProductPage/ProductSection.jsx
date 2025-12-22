@@ -17,7 +17,7 @@ const ProductSection = () => {
             },
             button: {
                 text: "Read More",
-                link: ""
+                link: "/product-detail"
             },
             animation: {
                 image: "fade-right",
@@ -36,7 +36,7 @@ const ProductSection = () => {
             },
             button: {
                 text: "Read More",
-                link: ""
+                link: "/product-detail"
             },
             animation: {
                 image: "fade-right",
@@ -55,7 +55,7 @@ const ProductSection = () => {
             },
             button: {
                 text: "Read More",
-                link: ""
+                link: "/product-detail"
             },
             animation: {
                 image: "fade-right",
@@ -77,7 +77,7 @@ const ProductSection = () => {
             },
             button: {
                 text: "Read More",
-                link: ""
+                link: "/product-detail"
             },
             animation: {
                 image: "fade-right",
@@ -96,7 +96,7 @@ const ProductSection = () => {
             },
             button: {
                 text: "Read More",
-                link: ""
+                link: "/product-detail"
             },
             animation: {
                 image: "fade-right",
@@ -115,7 +115,7 @@ const ProductSection = () => {
             },
             button: {
                 text: "Read More",
-                link: ""
+                link: "/product-detail"
             },
             animation: {
                 image: "fade-right",
@@ -134,7 +134,7 @@ const ProductSection = () => {
             },
             button: {
                 text: "Read More",
-                link: ""
+                link: "/product-detail"
             },
             animation: {
                 image: "fade-right",

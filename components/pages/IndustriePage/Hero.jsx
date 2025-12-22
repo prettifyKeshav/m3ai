@@ -1,0 +1,17 @@
+import React from 'react'
+import Banner from '@/components/Banner'
+
+const Hero = () => {
+    return (
+        <>
+            <Banner
+                className="industries-banner"
+                mediaSrc="image"
+                imageSrc="/assets/images/industries/industries-banner.jpg"
+                h3tag="For all industries, we are ready to deliver enterprise‑grade automation, cutting redundant workflows and unlocking productivity at scale"
+            />
+        </>
+    )
+}
+
+export default Hero

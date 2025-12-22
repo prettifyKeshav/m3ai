@@ -177,30 +177,30 @@
   font-size: 16px;
   padding: 30px 0;
 }
-.service-detail-secA .flex-box .flex-box-item:last-child {
-  flex: 1;
-}
-.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper {
+.service-detail-secA .flex-box .flex-box-item .product-swiper {
   position: relative;
 }
-.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide {
-  padding: 14px 0 20px 20px;
-  background: var(--white);
-  border-radius: 5px;
+.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper .swiper-slide {
+  padding: 30px 20px 30px 0px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1607843137);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
 }
-.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide h4 {
+.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper .swiper-slide h4 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.2;
-  margin-bottom: 5px;
+  color: var(--white);
 }
-.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide p {
-  color: rgba(0, 0, 0, 0.6980392157);
-  font-weight: 400;
-  font-size: 14px;
+.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper .swiper-slide p {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
   line-height: 1.1;
 }
-.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav {
+.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -210,10 +210,10 @@
   transform: translate(-50%, -50%);
   width: 105%;
 }
-.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav button {
+.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper-nav button {
   transition: 0.5s ease;
 }
-.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav .swiper-button-disabled {
+.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper-nav .swiper-button-disabled {
   opacity: 0;
 }
 
@@ -227,6 +227,21 @@
 }
 .service-detail-secB .flex-box .flex-box-item:first-child {
   flex: 1;
+  z-index: 1;
+  position: relative;
+}
+.service-detail-secB .flex-box .flex-box-item:first-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 351px;
+  height: 351px;
+  transform: translate(-50%, -50%);
+  background: #3853A3;
+  filter: blur(220px);
+  border-radius: 50%;
+  z-index: -1;
 }
 .service-detail-secB .flex-box .flex-box-item:first-child .content {
   max-width: 980px;
@@ -336,10 +351,160 @@
 }
 .service-detail-secB .flex-box .flex-box-item:last-child {
   width: 355px;
-  height: 658px;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 15px;
   padding: 30px;
   background: rgba(255, 255, 255, 0.1019607843);
   position: sticky;
-  top: 0;
+  top: 100px;
+  z-index: 1;
+}
+.service-detail-secB .flex-box .flex-box-item:last-child::before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 351px;
+  height: 351px;
+  transform: translate(-50%, -50%);
+  background: #3853A3;
+  filter: blur(220px);
+  border-radius: 50%;
+  z-index: -1;
+}
+.service-detail-secB .flex-box .flex-box-item:last-child .heading figure {
+  width: 131px;
+  height: 45px;
+  line-height: 0;
+  margin: 20px auto 15px;
+}
+.service-detail-secB .flex-box .flex-box-item:last-child .heading figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.service-detail-secB .flex-box .flex-box-item:last-child .heading h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--white);
+  text-align: center;
+}
+.service-detail-secB .flex-box .flex-box-item:last-child .form {
+  margin: 30px 0 10px 0;
+  --gaptb: 15px;
+}
+.service-detail-secB .flex-box .flex-box-item:last-child .form .btn2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 25px auto 0;
+}
+
+.service-detail-secC {
+  position: relative;
+  z-index: 1;
+}
+.service-detail-secC::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 351px;
+  height: 351px;
+  transform: translate(-50%, -50%);
+  background: #104AF7;
+  filter: blur(260px);
+  border-radius: 50%;
+  z-index: -1;
+}
+.service-detail-secC .container {
+  max-width: 1240px;
+}
+.service-detail-secC .more-services-swiper {
+  padding: 50px 0 100px 0;
+  position: relative;
+}
+.service-detail-secC .more-services-swiper .swiper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 107%;
+}
+.service-detail-secC .more-services-swiper .swiper-nav button {
+  transition: 0.5s ease;
+}
+.service-detail-secC .more-services-swiper .swiper-nav .swiper-button-disabled {
+  opacity: 0;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item {
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1019607843);
+  transition: 0.5s ease;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item:hover {
+  background: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%);
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item:hover .main-icon svg path {
+  fill: var(--white);
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item:hover .content figure {
+  margin: 60px 0 0 auto;
+  scale: 1;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item .main-icon {
+  height: 54px;
+  width: 54px;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item .main-icon img, .service-detail-secC .more-services-swiper .swiper .grid-box-item .main-icon svg {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item .main-icon img path, .service-detail-secC .more-services-swiper .swiper .grid-box-item .main-icon svg path {
+  fill: #55A5D9;
+  transition: 0.5s ease;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item .content h4 {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 24px;
+  line-height: 28px;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item .content p {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 16px;
+  line-height: 22px;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item .content figure {
+  height: 41px;
+  width: 41px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0px 0 0 auto;
+  scale: 0;
+  transition: 0.5s ease;
+}
+.service-detail-secC .more-services-swiper .swiper .grid-box-item .content figure svg {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=service.css.map */

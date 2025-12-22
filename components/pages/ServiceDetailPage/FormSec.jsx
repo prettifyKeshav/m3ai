@@ -1,11 +1,39 @@
 import React from 'react'
 
+import Image from 'next/image'
+
 const FormSec = () => {
     return (
         <>
             <form action="">
+                <div className="heading">
+                    <figure>
+                        <Image src="/assets/logo-white.svg" height={45} width={131} alt="white logo" ></Image>
+                    </figure>
+                    <h3>Let’s build your AI-powered future together</h3>
+                </div>
                 <div className="form form-grid">
-                    
+                    <div className="form-group">
+                        <input type="text" className="form-control" />
+                        <label htmlFor="">Name*</label>
+                    </div>
+                    <div className="form-group">
+                        <input type="text" className="form-control" />
+                        <label htmlFor="">Company Name</label>
+                    </div>
+                    <div className="form-group">
+                        <input type="tel" className="form-control" />
+                        <label htmlFor="">Phone</label>
+                    </div>
+                    <div className="form-group">
+                        <input type="text" className="form-control" />
+                        <label htmlFor="">Email</label>
+                    </div>
+                    <div className="form-group">
+                        <textarea name="" id="" className="form-control"></textarea>
+                        <label htmlFor="">Message</label>
+                    </div>
+                    <button className="btn2">Submit</button>
                 </div>
             </form>
         </>

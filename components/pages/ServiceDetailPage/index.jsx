@@ -3,6 +3,7 @@ import Hero from './Hero'
 import "@/styles/service/service.css"
 import BusinessImpact from './BusinessImpact'
 import Content from './Content'
+import MoreServices from './MoreServices'
 
 const ServiceDetailPage = () => {
   return (
@@ -10,6 +11,7 @@ const ServiceDetailPage = () => {
       <Hero />
       <BusinessImpact />
       <Content />
+      <MoreServices />
     </>
   )
 }

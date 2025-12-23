@@ -52,7 +52,14 @@ const PoweredImpact = () => {
 
                     <Swiper
                         loop={true}
-                        slidesPerView={4}
+                        // slidesPerView={4}
+                        breakpoints={{
+                            0: { slidesPerView: 1.2 },
+                            540: { slidesPerView: 1.2 },
+                            768: { slidesPerView: 2 },
+                            991: { slidesPerView: 4 },
+                            1200: { slidesPerView: 4 },
+                        }}
                         spaceBetween={20}
                         speed={500}
                         pagination={{ type: "fraction" }}

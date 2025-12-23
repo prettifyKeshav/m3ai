@@ -2,14 +2,31 @@
 
 .banner
     &.home-banner
+        @include media(768)
+            height: 70vh
+        @include media(540)
+            height: 60vh
+        .bg
+            height: 100%
+            figure
+                height: 100%
         .banner-wrapper
             .heading
-                // h1
+                h3
+                    @include media(540)
+                        font-size: 18px
+                h1
+                    @include media(540)
+                        font-size: 60px
 
 .home-secA
     padding: 50px 0 
     position: relative
     z-index: 1
+    @include media(768)
+        padding: 50px 0 20px 0px
+    @include media(540)
+        padding: 0
     &::before
         content: ""
         position: absolute
@@ -26,11 +43,23 @@
         display: flex
         justify-content: space-around
         align-items: center
+        @include media(768)
+            flex-direction: column
+            gap: 50px
         .flex-box-item:first-child
+            @include media(768)
+                text-align: center
             figure
                 width: 397px
                 height: 138px
                 line-height: 0
+                @include media(768)
+                    width: 287px
+                    height: fit-content
+                    line-height: 0
+                    margin: auto
+                @include media(540)
+                    width: 140px
                 img
                     height: 100%
                     width: 100%
@@ -42,25 +71,30 @@
                 color: #FFFFFFB2
                 max-width: 467px
                 margin: 30px 0 20px 0
+                @include media(768)
+                    max-width: 80%
+                    margin: 30px auto
+                    text-align: center
+                @include media(540)
+                    max-width: 100%
+                    margin: 30px auto
+                    text-align: center
+                    font-weight: normal
             a
-                color: none
-                outline: none
+                font-size: 16px
                 font-weight: 600
-                font-size: 14px
-
-                display: flex
-                align-items: center
-                gap: 10px
-                
-                background-image: $gradient-b
-                -webkit-background-clip: text
+                display: inline-block
+                background-image: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
                 background-clip: text
-                -webkit-text-fill-color: transparent
-                text-fill-color: transparent
+                -webkit-background-clip: text 
+                color: transparent
+                -webkit-text-fill-color: transparent 
                 figure
                     width: 16px
                     height: 16px
                     line-height: 1
+                    display: inline-block
+                    margin-left: 5px
                     img
                         width: 100%
                         height: 100%
@@ -74,11 +108,18 @@
                 padding: 20px 80px 20px 20px
                 margin-bottom: 20px
                 margin-left: auto
+                @include media(540)
+                    width: 100%
+                    height: fit-content
+                    text-align: center
+                    padding: 30px
                 h4
                     font-weight: 600
                     font-size: 24px
                     line-height: 1.2
                     color: $white
+                    @include media(540)
+                        margin-bottom: 10px
                 p
                     font-weight: 500
                     color: #FFFFFFB2
@@ -89,11 +130,15 @@
     padding: 50px 0
     position: relative
     z-index: 1
+    @include media(768)
+        padding: 50px 0 0 0
+    @include media(540)
+        padding: 30px 0 0
     &::before
         content: ""
         position: absolute
         top: 40%
-        left: 80%
+        left: 50%
         width: 351px
         height: 351px
         transform: translate(-50%,-50%)
@@ -116,8 +161,13 @@
     .heading
         position: relative
         z-index: 1
+        h2
+            @include media(768)
+                max-width: 435px
     .swiper
         margin: 50px 0 40px 0
+        @include media(540)
+            margin: 20px 0 0px
         .bottom-nav
             border: 1px solid #FFFFFF
             border-radius: 25px
@@ -126,7 +176,7 @@
             justify-content: space-between
             align-items: center
             width: 177px
-            margin: 40px auto 0
+            margin: 40px auto 1px
         .swiper-pagination
             color: $white
             pointer-events: none
@@ -182,6 +232,9 @@
                         justify-content: space-between
                         align-items: center
                         z-index: 1
+                        align-items: self-end
+                        @include media(540)
+                            padding: 30px 20px
                         .left   
                             h4
                                 font-weight: 700
@@ -204,11 +257,16 @@
                             justify-content: center
                             align-items: center
                             padding: 10px
+                            svg
+                                height: fit-content
+                                width: fit-content
 
 .home-secC
     padding: 50px 0
     position: relative
     z-index: 1
+    @include media(540)
+        padding: 50px 0 20px 0
     &::before
         content: ""
         position: absolute
@@ -227,6 +285,11 @@
         gap: 100px
         align-items: center
         padding: 50px 0 0 0
+        @include media(768)
+            flex-direction: column
+            gap: 40px
+        @include media(540)
+            padding: 0
         @keyframes floatUpDown 
             0% 
                 transform: translateY(0)
@@ -239,6 +302,9 @@
             height: 428px
             position: 1
             position: relative
+            @include media(540)
+                height: 378px
+                width: 100%
             figure
                 .up-im
                     width: 453px
@@ -249,6 +315,10 @@
                     animation: floatUpDown 3s ease-in-out infinite
                     will-change: transform
                     top: 30px
+                    @include media(768)
+                        height: 343px
+                    @include media(540)
+                        width: 100%
                 .lw-im
                     position: absolute
                     left: 0
@@ -257,10 +327,16 @@
                     z-index: 1
                     height: fit-content
                     width: fit-content
+                    @include media(768)
+                        width: 100%
         .flex-box-item:last-child
             max-width: 521px
+            @include media(768)
+                max-width: 90%
             .heading
                 position: relative
+                width: fit-content
+                margin: auto
                 &::before
                     content: ""
                     position: absolute
@@ -269,6 +345,8 @@
                     height: 3px
                     width: 60px
                     background: #1B9BD5
+                    @include media(540)
+                        display: none
                 h3
                     font-weight: 300
                     font-size: 48px
@@ -278,6 +356,8 @@
                     position: relative
                     width: fit-content
                     margin-bottom: 5px
+                    @include media(768)
+                        margin: 10px auto 10px
                     &::before
                         content: "R"
                         position: absolute
@@ -296,12 +376,20 @@
                     font-weight: 600
                     font-size: 18px
                     line-height: 1
+                    @include media(768)
+                        text-align: center
+                        line-height: 1.3
+                    @include media(540)
+                        max-width: 80%
+                        margin: auto
             .description
                 font-weight: 500
                 font-size: 16px
                 line-height: 1.3
                 margin: 30px 0 30px 0 
                 color: #FFFFFFB2
+                @include media(768)
+                    text-align: center
             .product-swiper
                 position: relative
                 .swiper
@@ -328,6 +416,8 @@
                     left: 50%
                     transform: translate(-50%,-50%)
                     width: 110%
+                    @include media(540)
+                        width: 120%
                     button
                         transition: 0.5s ease
                     .swiper-button-disabled
@@ -344,6 +434,8 @@
                 align-items: center
                 gap: 10px
                 width: fit-content
+                @include media(768)
+                    margin: 40px auto 0
                 &:hover
                     &::before
                         font-weight: 700
@@ -374,6 +466,8 @@
     padding: 50px 0
     position: relative
     z-index: 1
+    @include media(768)
+        padding: 20px 0 50px 0
     &::before
         content: ""
         position: absolute
@@ -389,8 +483,15 @@
     .heading
         position: relative
         z-index: 1
+        @include media(540)
+            max-width: 80%
+            margin: auto
     .swiper
         margin: 60px 0 40px 0
+        @include media(768)
+            margin: 30px 0 40px
+        @include media(768)
+            margin: 30px 0 10px
         .bottom-nav
             border: 1px solid #FFFFFF
             border-radius: 25px
@@ -415,6 +516,10 @@
                 border: 1px solid #AEAEAE26
                 height: fit-content
                 text-align: center
+                transition: 0.5s ease
+                &:hover
+                    background: #55A5D9
+                    border: 1px solid #3853A3
                 &::before
                     content: ""
                     position: absolute

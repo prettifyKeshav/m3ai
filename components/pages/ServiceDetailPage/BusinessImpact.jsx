@@ -64,7 +64,7 @@ const BusinessImpact = () => {
 
                                 <Swiper
                                     loop={false}
-                                    slidesPerView={4}
+                                    slidesPerView={3}
                                     spaceBetween={20}
                                     speed={900}
                                     pagination={{ type: "fraction" }}

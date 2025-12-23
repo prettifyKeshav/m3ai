@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useModalStore } from "@/store/modalStore";
 
 const IndustriesCard = () => {
-    const openEnquire = useModalStore((state) => state.openEnquire)
+    const openIndustriesDetail = useModalStore((state) => state.openIndustriesDetail)
     const poweredImpactData = [
         {
             id: 1,
@@ -86,7 +86,7 @@ const IndustriesCard = () => {
             <div className="container">
                 <div className="grid-box">
                     {poweredImpactData.map((item) => (
-                        <div href={item.link} key={item.id} className="col" data-animate="zoom-in" onClick={openEnquire}>
+                        <div href={item.link} key={item.id} className="col" data-animate="zoom-in" onClick={openIndustriesDetail}>
                             <figure>
                                 <Image
                                     src={item.icon}

@@ -165,11 +165,13 @@
   overflow: hidden;
 }
 .service-detail-secA .flex-box {
+  display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 .service-detail-secA .flex-box .flex-box-item:first-child {
-  flex: 0 1 230px;
+  width: 15%;
+  display: inline-block;
 }
 .service-detail-secA .flex-box .flex-box-item:first-child h4 {
   color: #57DDE6;
@@ -177,10 +179,14 @@
   font-size: 16px;
   padding: 30px 0;
 }
-.service-detail-secA .flex-box .flex-box-item .product-swiper {
+.service-detail-secA .flex-box .flex-box-item:last-child {
+  width: 85%;
+  display: inline-block;
+}
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper {
   position: relative;
 }
-.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper .swiper-slide {
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide {
   padding: 30px 20px 30px 0px;
   border-right: 1px solid rgba(255, 255, 255, 0.1607843137);
   display: flex;
@@ -188,19 +194,19 @@
   align-items: center;
   gap: 20px;
 }
-.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper .swiper-slide h4 {
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide h4 {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
   color: var(--white);
 }
-.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper .swiper-slide p {
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper .swiper-slide p {
   font-weight: 500;
   font-size: 16px;
   color: white;
   line-height: 1.1;
 }
-.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper-nav {
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -210,10 +216,10 @@
   transform: translate(-50%, -50%);
   width: 105%;
 }
-.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper-nav button {
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav button {
   transition: 0.5s ease;
 }
-.service-detail-secA .flex-box .flex-box-item .product-swiper .swiper-nav .swiper-button-disabled {
+.service-detail-secA .flex-box .flex-box-item:last-child .product-swiper .swiper-nav .swiper-button-disabled {
   opacity: 0;
 }
 

@@ -2,9 +2,9 @@
 import { useModalStore } from "@/store/modalStore";
 import { useEffect, useState } from "react";
 
-export default function EnquirePop() {
-    const isOpen = useModalStore((state) => state.isEnquireOpen)
-    const closeEnquire = useModalStore((state) => state.closeEnquire)
+export default function IndustriesDetailPop() {
+    const isOpen = useModalStore((state) => state.isIndustriesDetailOpen)
+    const closeIndustriesDetail = useModalStore((state) => state.closeIndustriesDetail)
 
     useEffect(() => {
         const inputBoxes = document.querySelectorAll('.form-control');
@@ -37,31 +37,20 @@ export default function EnquirePop() {
     }, []);
 
     return (
-        <div className={`model enquire-pop ${isOpen ? "is-open" : ""}`}>
-            <button className="close" onClick={closeEnquire}><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 0.5L25.5 25.5M0.5 25.5L25.5 0.5" stroke="black" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
+        <div className={`model industrie-detail-pop ${isOpen ? "is-open" : ""}`}>
+            <button className="close" onClick={closeIndustriesDetail}><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 0.5L25.5 25.5M0.5 25.5L25.5 0.5" stroke="black" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
             <div className="model-body">
-                <div className="title">
-                    <h2>Become an Agent</h2>
-                    {/* <p>Connect with our experts. Schedule a callback and get personalized assistance.</p> */}
-                </div>
-                <div className="form form-grid">
-                    <div className="form-group">
-                        <input type="text" className="form-control" />
-                        <label htmlFor="">Name*</label>
+                <div className="flex-box">
+                    <div className="flex-box-item">
+                        <h2>Banking</h2>
                     </div>
-                    <div className="form-group">
-                        <input type="text" className="form-control" />
-                        <label htmlFor="">Email</label>
+                    <div className="flex-box-item">
+                        <ul>
+                            <li>Underwriting Workflow Automation  Automate risk assessment and approvals</li>
+                            <li>Structured Finance Model Optimization  Streamline complex financial models</li>
+                            <li>Treasury Operations Workflow Automation  Simplify cash management and reconciliation</li>
+                        </ul>
                     </div>
-                    <div className="form-group">
-                        <input type="tel" className="form-control" />
-                        <label htmlFor="">Phone</label>
-                    </div>
-                    <div className="form-group">
-                        <textarea name="" id="" className="form-control"></textarea>
-                        <label htmlFor="">Message</label>
-                    </div>
-                    <button className="btn2">Submit Now</button>
                 </div>
             </div>
         </div>

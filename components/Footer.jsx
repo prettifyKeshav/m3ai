@@ -9,6 +9,7 @@ import EnquirePop from "./EnquirePop";
 import { useModalStore } from "@/store/modalStore"
 import Overlay from "./Overlay";
 import VideoPopup from "./VideoPop";
+import IndustriesDetailPop from "./IndustrieDetailsPop";
 
 export default function Footer() {
     const openEnquire = useModalStore((state) => state.openEnquire)
@@ -120,6 +121,7 @@ export default function Footer() {
                 </div>
             </footer>
             <Overlay />
+            <IndustriesDetailPop />
             <EnquirePop />
             <FooterStrip />
             <Hamburger />

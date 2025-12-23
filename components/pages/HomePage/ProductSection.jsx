@@ -67,7 +67,14 @@ const ProductSection = () => {
 
                                 <Swiper
                                     loop={false}
-                                    slidesPerView={2}
+
+                                    breakpoints={{
+                                        0: { slidesPerView: 1.2 },
+                                        540: { slidesPerView: 1.2 },
+                                        768: { slidesPerView: 2 },
+                                        991: { slidesPerView: 2 },
+                                        1200: { slidesPerView: 2 },
+                                    }}
                                     spaceBetween={20}
                                     speed={900}
                                     pagination={{ type: "fraction" }}

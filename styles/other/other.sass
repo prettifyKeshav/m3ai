@@ -19,26 +19,44 @@
         font-size: 22px
         font-weight: 500
         margin: 30px 0 10px 0
-        color: #1d2127
+        font-weight: 600
+        display: inline-block
+        background-image: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
+        background-clip: text
+        -webkit-background-clip: text 
+        color: transparent
+        -webkit-text-fill-color: transparent 
     h4
         font-weight: 500
         margin: 30px 0 10px 0
         color: #1d2127
         font-size: 20px
-
+        display: inline-block
+        background-image: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
+        background-clip: text
+        -webkit-background-clip: text 
+        color: transparent
+        -webkit-text-fill-color: transparent 
     h5
         font-size: 17px
-        color: #555555
         font-weight: 600
         margin: 20px 0 10px 0
+        display: inline-block
+        background-image: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
+        background-clip: text
+        -webkit-background-clip: text 
+        color: transparent
+        -webkit-text-fill-color: transparent 
     h6
         font-size: 15px
-    // h2, h3, h4
-    //     margin: 20px 0 15px
-    // h5, h6
-    //     margin: 30px 0 15px
+        display: inline-block
+        background-image: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
+        background-clip: text
+        -webkit-background-clip: text 
+        color: transparent
+        -webkit-text-fill-color: transparent 
     p, li
-        color: var(--text)
+        color: #FFFFFFB2
         text-align: justify
         font-size: 16px
     a
@@ -68,12 +86,22 @@
             background: var(--primary) 
 
 .privacy-policy,.terms-condition
-    margin-top: var(--headerheight)
+    margin-top: 200px
     .container
         margin: 980px
-    h1
-        color: $secondary
+    .heading
         text-align: center
+        margin-bottom: 30px
+    h1
+        font-size: 56px
+        font-weight: 600
+        display: inline-block
+        background-image: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
+        background-clip: text
+        -webkit-background-clip: text 
+        color: transparent
+        -webkit-text-fill-color: transparent 
+        margin: 0 auto 0 
 
 .thanks-banner,.error-banner
     position: relative
@@ -83,17 +111,12 @@
     align-items: center
     flex-direction: column
     .content
-        // position: absolute
-        // top: 50%
-        // left: 50%
-        // transform: translate(-50%, -50%)
-        // text-align: center
-        // width: 90%
+        padding: 0
         .logo
             padding: 0
-            width: 620px
-            height: 350px
-            margin: auto
+            width: 397px
+            height: 138px
+            margin: 0 auto 30px
             @include media(540)
                 width: 100%
                 height: 290px
@@ -110,13 +133,14 @@
             max-width: 527px
             font-weight: 600
             margin: auto
+            color: $white
         h6
             font-size: 18px
             line-height: 1.34
-            color: var(--text)
-            margin-top: 12px
+            color: #FFFFFFB2
             font-weight: 500
-            margin-bottom: 10px
+            max-width: 600px
+            margin:12px auto 10px
         .bottom-btn
             margin: 40px 0 0 0
             a
@@ -144,10 +168,3 @@
                     transition: 0.3s ease
                     width: 30px
                     height: 30px
-
-.error-banner
-    .content
-        position: static
-        transform: none
-        h6
-            margin-top: -40px

@@ -11,13 +11,13 @@ const PageNotFoundPage = () => {
                 <section className='error-banner'>
                     <div className="content text-center">
                         <div className="logo">
-                            <Image src="/assets/images/error.gif" width={800} height={600} alt='error image'></Image>
+                            <Image src="/assets/images/m3ai-icon.svg" width={397} height={138} alt='error image'></Image>
                         </div>
 
                         <h6>Sorry, the page you are looking for could not be found.</h6>
 
                         <div className="bottom-btn" data-animate="zoom-in">
-                            <Link href="/">
+                            <Link href="/" className='btn2'>
                                 BACK TO HOME
                             </Link>
                         </div>

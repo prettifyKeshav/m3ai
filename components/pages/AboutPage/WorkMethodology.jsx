@@ -54,7 +54,7 @@ const WorkMethodology = () => {
 
                         <div className="swiper-nav">
                             <button className='our-work-left-swiper-slide'>
-                               <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} viewBox="0 0 48 48"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.7} d="M31 36L19 24l12-12"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} viewBox="0 0 48 48"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.7} d="M31 36L19 24l12-12"></path></svg>
                             </button>
                             <button className='our-work-right-swiper-slide'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} viewBox="0 0 48 48"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.7} d="m19 12l12 12l-12 12"></path></svg>
@@ -63,8 +63,14 @@ const WorkMethodology = () => {
 
                         <Swiper
                             loop={false}
-                            slidesPerView={4}
                             spaceBetween={20}
+                            breakpoints={{
+                                0: { slidesPerView: 1.2 },
+                                540: { slidesPerView: 1 },
+                                768: { slidesPerView: 2 },
+                                991: { slidesPerView: 3 },
+                                1200: { slidesPerView: 4 },
+                            }}
                             speed={900}
                             pagination={{ type: "fraction" }}
                             navigation={{

@@ -27,8 +27,29 @@
   border-radius: 50%;
   z-index: 1;
 }
+@media only screen and (max-width: 1024px) {
+  .banner.industries-banner {
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .banner.industries-banner {
+    height: 60vh;
+  }
+}
+.banner.industries-banner .bg {
+  height: 100%;
+}
+.banner.industries-banner .bg figure {
+  height: 100%;
+}
 .banner.industries-banner .banner-wrapper {
   bottom: 34%;
+}
+@media only screen and (max-width: 1024px) {
+  .banner.industries-banner .banner-wrapper {
+    bottom: 20%;
+  }
 }
 .banner.industries-banner .banner-wrapper .heading h3 {
   font-weight: 300;
@@ -37,6 +58,11 @@
   text-align: center;
   max-width: 612px;
   margin: auto;
+}
+@media only screen and (max-width: 540px) {
+  .banner.industries-banner .banner-wrapper .heading h3 {
+    font-size: 24px;
+  }
 }
 .banner.industries-banner .banner-wrapper .heading h3 strong {
   font-weight: 700;
@@ -49,6 +75,25 @@
   transform: translateY(-30%);
   position: relative;
   z-index: 1;
+}
+@media only screen and (max-width: 1024px) {
+  .industries-card .grid-box {
+    transform: translateY(0%);
+    padding: 0 0 50px 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industries-card .grid-box {
+    transform: translateY(0%);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .industries-card .grid-box {
+    transform: translateY(0%);
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .industries-card .grid-box::after {
   content: "";
@@ -63,6 +108,12 @@
   border-radius: 50%;
   z-index: -1;
 }
+@media only screen and (max-width: 1024px) {
+  .industries-card .grid-box::after {
+    left: 50%;
+    filter: blur(210px);
+  }
+}
 .industries-card .grid-box .col {
   position: relative;
   border-radius: 10px;
@@ -75,6 +126,17 @@
   cursor: pointer;
   line-height: 0;
   transition: 0.5s ease;
+}
+@media only screen and (max-width: 1024px) {
+  .industries-card .grid-box .col {
+    height: 190px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .industries-card .grid-box .col {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 .industries-card .grid-box .col:hover {
   background: #55A5D9;

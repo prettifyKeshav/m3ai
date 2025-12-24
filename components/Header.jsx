@@ -7,7 +7,7 @@ import { useModalStore } from "@/store/modalStore";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-    // const openHam = useModalStore((state) => state.openHam);
+    const openHam = useModalStore((state) => state.openHam);
     // const openEnquire = useModalStore((state) => state.openEnquire)
     // const openLogin = useModalStore((state) => state.openLogin)
 
@@ -36,18 +36,10 @@ const Header = () => {
 
                         <nav className="colB header__nav">
                             <ul className="nav-list">
-                                <li>
-                                    <Link href="about-us">About M3Ai</Link>
-                                </li>
-                                <li>
-                                    <Link href="service">M3Ai Services</Link>
-                                </li>
-                                <li>
-                                    <Link href="product">M3Ai Products</Link>
-                                </li>
-                                <li>
-                                    <Link href="industrie">Industries</Link>
-                                </li>
+                                <li><Link href="about-us">About M3Ai</Link></li>
+                                <li><Link href="service">M3Ai Services</Link></li>
+                                <li><Link href="product">M3Ai Products</Link></li>
+                                <li><Link href="industrie">Industries</Link></li>
                             </ul>
                         </nav>
 
@@ -55,7 +47,7 @@ const Header = () => {
                             <Link href="contact-us" className="btn" data="Contact Us"></Link>
                         </div>
 
-                        <button type="button" className="ham-btn" data-model=".ham-pop">
+                        <button type="button" className="ham-btn" onClick={openHam}>
                             <span></span>
                             <span></span>
                             <span></span>

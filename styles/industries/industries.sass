@@ -16,8 +16,20 @@
             filter: blur(110px)
             border-radius: 50%
             z-index: 1
+        @include media(1024)
+            height: 70vh
+        @include media(540)
+            height: 60vh
+        .bg
+            height: 100%
+            figure
+                height: 100%
+                
+
         .banner-wrapper
             bottom: 34%
+            @include media(1024)
+                bottom: 20%
             .heading
                 h3
                     font-weight: 300
@@ -26,6 +38,8 @@
                     text-align: center
                     max-width: 612px
                     margin: auto
+                    @include media(540)
+                        font-size: 24px
                     strong
                         font-weight: 700
 
@@ -37,6 +51,17 @@
         transform: translateY(-30%)
         position: relative
         z-index: 1
+        @include media(1024)
+            transform: translateY(0%)
+            padding: 0 0 50px 0
+            grid-template-columns: repeat(4 ,1fr)
+        @include media(768)
+            transform: translateY(0%)
+            grid-template-columns: repeat(3 ,1fr)
+        @include media(540)
+            transform: translateY(0%)
+            grid-template-columns: repeat(1 ,1fr)
+        
         &::after
             content: ""
             position: absolute
@@ -49,6 +74,9 @@
             filter: blur(110px)
             border-radius: 50%
             z-index: -1
+            @include media(1024)
+                left: 50%
+                filter: blur(210px)
         .col
             position: relative
             border-radius: 10px
@@ -60,6 +88,10 @@
             cursor: pointer
             line-height: 0
             transition: 0.5s ease
+            @include media(1024)
+                height: 190px
+            @include media(540)
+                height: fit-content
             &:hover
                 background: #55A5D9
                 border: 1px solid #3853A3

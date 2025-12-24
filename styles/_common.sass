@@ -369,14 +369,15 @@ button
     top: 0
     z-index: 5
     opacity: 0
-    background: rgb(0 0 0 /.5)
+    // background: rgb(0 0 0 /.5)
+    background: #000000ab
     transform: translateY(100%)
     transition: 0s ease .5s,opacity .5s ease
     cursor: pointer
-    @include media(991)
-        z-index: 2
+    // @include media(991)
+    //     z-index: 2
     @include media(675)
-        display: none
+        // display: none
     &.is-open
         transition: opacity 1s ease
         opacity: 1
@@ -667,6 +668,7 @@ button
             top: 25px
             right: 25px
             line-height: 0
+            z-index: 1
             @include media(520)
                 top: 20px
                 right: 20px

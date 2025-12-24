@@ -4,17 +4,39 @@
     &.service-banner
         &::before
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%),linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),linear-gradient(180deg, rgba(0, 0, 0, 0) 71.15%, #000000 100%),linear-gradient(360deg, rgba(0, 0, 0, 0) 64.42%, rgba(0, 0, 0, 0.85) 100%)
+        @include media(768)
+            height: 70vh
+        @include media(540)
+            height: 50vh
+        .bg
+            height: 100%
+            figure
+                height: 100%
         .banner-wrapper
             bottom: 34%
+            @include media(768)
+                bottom: 15%
+            @include media(540)
+                bottom: 15%
             .heading
                 h3
                     font-weight: 600
                     font-size: 20px
+                    @include media(540)
+                        font-size: 18px
+                        margin: auto
+                h1
+                    @include media(540)
+                        font-size: 60px
+                        font-size: 50px
+                        margin-bottom: 10px
 
 .service-secA
     padding: 60px 0
     position: relative
     z-index: 1
+    @include media(768)
+        padding: 0 0 60px 0
     &::before
         content: ""
         position: absolute
@@ -39,10 +61,18 @@
         filter: blur(180px)
         border-radius: 50%
         z-index: -1
+        @include media(1024)
+            left: 70%
+        @include media(540)
+            left: 50%
     .grid-box
         display: grid
         grid-template-columns: repeat(3,1fr)
         gap: 20px
+        @include media(768)
+            grid-template-columns: repeat(2,1fr)
+        @include media(540)
+            grid-template-columns: repeat(1,1fr)
         .grid-box-item
             height: 350px
             border-radius: 10px
@@ -50,10 +80,11 @@
             background: #FFFFFF1A
             transition: 0.5s ease
             padding: 30px
-
             display: flex
             flex-direction: column
             justify-content: space-between
+            @include media(540)
+                width: 100%
             &:hover
                 background: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
                 .main-icon
@@ -81,6 +112,7 @@
                     color: $white
                     font-size: 24px
                     line-height: 28px
+                    margin-bottom: 10px
                 p
                     font-weight: 500
                     color: #FFFFFFB2
@@ -109,10 +141,14 @@
 .banner
     &.service-detail-banner
         &::before
-            // background: none
             background: linear-gradient(270deg, #0000 34.8%, #000000b3 171.8%), linear-gradient(360deg, #0000 59.46%, #0006 90.86%)
-
+        @include media(768)
+            height: 70vh
+        @include media(540)
+            height: 60vh
+            background: linear-gradient(177deg, #0000 -5.2%, #000000b3 171.8%), linear-gradient(360deg, #0000 59.46%, #0006 90.86%)
         .bg
+            height: 100%
             figure
                 height: 100%
                 width: 100%
@@ -122,6 +158,8 @@
                     object-fit: cover
             .banner-wrapper
                 bottom: 35%
+                @include media(540)
+                    bottom: 10%
                 .heading
                     max-width: 600px
                     text-align: left
@@ -132,10 +170,18 @@
                         width: fit-content
                         text-align: left
                         margin-bottom: 15px
+                        @include media(540)
+                            font-size: 35px
+                            margin-bottom: 10px
+                            text-align: center
                     h3
                         font-weight: 600
                         color: $white
                         font-size: 16px
+                        @include media(540)
+                            font-size: 18px
+                            margin-bottom: 10px
+                            text-align: center
 
 .service-detail-secA
     background: linear-gradient(90deg, #222222 0%, #050829 100%)
@@ -144,17 +190,30 @@
         display: flex
         justify-content: space-between
         gap: 20px
+        @include media(768)
+            flex-direction: column
+            gap: 0
         .flex-box-item:first-child
             width: 15%
             display: inline-block
+            @include media(768)
+                width: 100%
             h4
                 color: #57DDE6
                 font-weight: 600
                 font-size: 16px
                 padding: 30px 0 
+                @include media(768)
+                    padding: 10px 0
+                    text-align: center
+                    font-size: 35px
+                @include media(540)
+                    font-size: 25px
         .flex-box-item:last-child
             width: 85%
             display: inline-block
+            @include media(768)
+                width: 100%
             .product-swiper
                 position: relative
                 .swiper
@@ -165,6 +224,8 @@
                         justify-content: start
                         align-items: center
                         gap: 20px
+                        @include media(768)
+                            padding: 20px 20px 20px 0
                         h4
                             font-weight: 600
                             font-size: 24px
@@ -186,6 +247,8 @@
                     left: 50%
                     transform: translate(-50%,-50%)
                     width: 105%
+                    @include media(768)
+                        display: none
                     button
                         transition: 0.5s ease
                     .swiper-button-disabled
@@ -193,10 +256,15 @@
 
 .service-detail-secB
     padding: 70px 0
+    @include media(540)
+        padding: 30px 0 50px 0
     .flex-box
         display: flex
         justify-content: space-between
         gap: 40px
+        @include media(768)
+            flex-direction: column
+            gap: 0
         .flex-box-item:first-child
             flex: 1
             z-index: 1
@@ -218,7 +286,7 @@
                 margin: auto
                 padding: 0 0 50px 0 
                 @include media(540)
-                    max-width: 90%
+                    max-width: 100%
                 h1
                     font-size: 48px
                     margin-bottom: 25px
@@ -250,6 +318,8 @@
                     color: #FFFFFFB2
                     text-align: justify
                     font-size: 16px
+                    @include media(540)
+                        text-align: left
                 a
                     color: var(--text)
                     &:hover
@@ -304,6 +374,8 @@
             position: sticky
             top: 100px
             z-index: 1
+            @include media(768)
+                width: 100%
             &::before
                 content: ""
                 position: absolute
@@ -356,9 +428,17 @@
         z-index: -1
     .container
         max-width: 1240px
+        @include media(1024)
+            max-width: 940px
+        .heading
+            h2
+                @include media(540)
+                    font-size: 34px
     .more-services-swiper
         padding: 50px 0 100px 0 
         position: relative
+        @include media(540)
+            padding: 20px 0 40px 0
         .swiper-nav
             display: flex
             justify-content: space-between
@@ -368,6 +448,11 @@
             left: 50%
             transform: translate(-50%,-50%)
             width: 107%
+            @include media(1024)
+                width: 110%
+            @include media(768)
+                display: none
+            
             button
                 transition: 0.5s ease
             .swiper-button-disabled
@@ -411,6 +496,7 @@
                         color: $white
                         font-size: 24px
                         line-height: 28px
+                        margin-bottom: 10px
                     p
                         font-weight: 500
                         color: #FFFFFFB2

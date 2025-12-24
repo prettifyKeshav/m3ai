@@ -53,7 +53,13 @@ const Hero = () => {
 
                                 <Swiper
                                     loop={false}
-                                    slidesPerView={6}
+                                    breakpoints={{
+                                        0: { slidesPerView: 1 },
+                                        540: { slidesPerView: 3 },
+                                        768: { slidesPerView: 4 },
+                                        991: { slidesPerView: 5 },
+                                        1200: { slidesPerView: 6 },
+                                    }}
                                     spaceBetween={20}
                                     speed={900}
                                     pagination={{ type: "fraction" }}

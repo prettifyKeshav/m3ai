@@ -70,11 +70,11 @@ export default function Footer() {
                             <div className="flex-box-item">
                                 <h6>Discover</h6>
                                 <ul>
-                                    <li><Link href="/">Products</Link></li>
-                                    <li><Link href="/">Industries</Link></li>
-                                    <li><Link href="/">About M3Ai</Link></li>
+                                    <li><Link href="/product">Products</Link></li>
+                                    <li><Link href="/industrie">Industries</Link></li>
+                                    <li><Link href="/about-us">About M3Ai</Link></li>
                                     <li><Link href="/">Insights</Link></li>
-                                    <li><Link href="/">Contact us</Link></li>
+                                    <li><Link href="/contact-us">Contact us</Link></li>
                                 </ul>
                             </div>
                         </div>

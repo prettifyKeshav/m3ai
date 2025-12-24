@@ -6,6 +6,8 @@ export default function IndustriesDetailPop() {
     const isOpen = useModalStore((state) => state.isIndustriesDetailOpen)
     const closeIndustriesDetail = useModalStore((state) => state.closeIndustriesDetail)
 
+    const selectedIndustry = useModalStore((state) => state.selectedIndustry);
+
     useEffect(() => {
         const inputBoxes = document.querySelectorAll('.form-control');
 
@@ -42,14 +44,22 @@ export default function IndustriesDetailPop() {
             <div className="model-body">
                 <div className="flex-box">
                     <div className="flex-box-item">
-                        <h2>Banking</h2>
+                        <h2 className="title">{selectedIndustry?.title}</h2>
                     </div>
-                    <div className="flex-box-item">
-                        <ul>
-                            <li>Underwriting Workflow Automation  Automate risk assessment and approvals</li>
-                            <li>Structured Finance Model Optimization  Streamline complex financial models</li>
-                            <li>Treasury Operations Workflow Automation  Simplify cash management and reconciliation</li>
-                        </ul>
+                    <div className="flex-box-item content">
+                        {selectedIndustry?.content?.length > 0 && (
+                            <ul>
+                                {selectedIndustry.content.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        )}
+
+                        {selectedIndustry?.contentType === "paragraph" && (
+                            <p>{selectedIndustry.content}</p>
+                        )}
+
+
                     </div>
                 </div>
             </div>

@@ -64,7 +64,13 @@ const BusinessImpact = () => {
 
                                 <Swiper
                                     loop={false}
-                                    slidesPerView={3}
+                                    breakpoints={{
+                                        0: { slidesPerView: 1.2 },
+                                        540: { slidesPerView: 1 },
+                                        768: { slidesPerView: 2.4 },
+                                        991: { slidesPerView: 3 },
+                                        1200: { slidesPerView: 3 },
+                                    }}
                                     spaceBetween={20}
                                     speed={900}
                                     pagination={{ type: "fraction" }}

@@ -737,10 +737,11 @@
   border-radius: 50%;
   z-index: -1;
 }
-.home-secD .swiper .swiper-wrapper .swiper-slide a {
+.home-secD .swiper .swiper-wrapper .swiper-slide .maincard {
   padding: 20px;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .home-secD .swiper .swiper-wrapper .swiper-slide figure {
   width: 60px;

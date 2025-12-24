@@ -988,20 +988,10 @@ button {
   top: 0;
   z-index: 5;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6705882353);
   transform: translateY(100%);
   transition: 0s ease 0.5s, opacity 0.5s ease;
   cursor: pointer;
-}
-@media only screen and (max-width: 991px) {
-  .overlay {
-    z-index: 2;
-  }
-}
-@media only screen and (max-width: 675px) {
-  .overlay {
-    display: none;
-  }
 }
 .overlay.is-open {
   transition: opacity 1s ease;
@@ -1257,6 +1247,7 @@ button {
   top: 25px;
   right: 25px;
   line-height: 0;
+  z-index: 1;
 }
 @media only screen and (max-width: 520px) {
   .model .close:not(.btn, .close-video, .not-ab) {

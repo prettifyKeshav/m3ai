@@ -396,6 +396,8 @@ footer
                     color: white
                     max-width: 329px
                     margin-bottom: 10px
+                    @include media(540)
+                        font-size: 16px
                 .form-group
                     display: flex
                     justify-content: space-between
@@ -570,10 +572,10 @@ footer
             flex: 1
             .single-menulist
                 font-size: 30px
-                color: $primary
+                color: $white
                 transition: .5s ease 
                 &:hover
-                    color: $white
+                    color: $primary
             >li
                 cursor: pointer
                 &:not(:last-child)
@@ -612,10 +614,10 @@ footer
                     &:hover
                         svg
                             path
-                                fill: $white
+                                fill: $primary
                     svg
                         path
-                            fill: $primary
+                            fill: $white
 
 .enquire-pop
     right: 0
@@ -1104,14 +1106,15 @@ footer
                 display: flex
                 flex-direction: column
                 align-items: center
-                padding: 10px
-                gap: 5px
+                // padding: 10px
+                padding: 7px
+                // gap: 5px
                 color: $white
-                font-size: 14px
+                font-size: 16px
                 height: var(--footerstrip)
                 svg
-                    width: 20px
-                    height: 20px
+                    width: 30px
+                    height: 30px
                     &[stroke]
                         stroke: $white
                     &[fill]

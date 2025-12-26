@@ -2719,6 +2719,11 @@ footer .main-footer .colC .form-grid h6 {
   max-width: 329px;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 540px) {
+  footer .main-footer .colC .form-grid h6 {
+    font-size: 16px;
+  }
+}
 footer .main-footer .colC .form-grid .form-group {
   display: flex;
   justify-content: space-between;
@@ -2948,11 +2953,11 @@ footer .bottom-footer .pret a {
 }
 .model.ham-pop .model-body .nav-list .single-menulist {
   font-size: 30px;
-  color: var(--primary);
+  color: var(--white);
   transition: 0.5s ease;
 }
 .model.ham-pop .model-body .nav-list .single-menulist:hover {
-  color: var(--white);
+  color: var(--primary);
 }
 .model.ham-pop .model-body .nav-list > li {
   cursor: pointer;
@@ -2997,10 +3002,10 @@ footer .bottom-footer .pret a {
   margin-right: 4px;
 }
 .model.ham-pop .model-body .bottom-list .social-icons a:hover svg path {
-  fill: var(--white);
+  fill: var(--primary);
 }
 .model.ham-pop .model-body .bottom-list .social-icons a svg path {
-  fill: var(--primary);
+  fill: var(--white);
 }
 
 .enquire-pop {
@@ -3609,15 +3614,14 @@ footer .bottom-footer .pret a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  gap: 5px;
+  padding: 7px;
   color: var(--white);
-  font-size: 14px;
+  font-size: 16px;
   height: var(--footerstrip);
 }
 .footer-strip ul li a svg, .footer-strip ul li button svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .footer-strip ul li a svg[stroke], .footer-strip ul li button svg[stroke] {
   stroke: var(--white);

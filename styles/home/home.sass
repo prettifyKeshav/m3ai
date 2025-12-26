@@ -165,7 +165,7 @@
             @include media(768)
                 max-width: 435px
     .swiper
-        margin: 50px 0 40px 0
+        margin: 50px 0 0px 0
         @include media(540)
             margin: 20px 0 0px
         .bottom-nav
@@ -436,6 +436,8 @@
                 width: fit-content
                 @include media(768)
                     margin: 40px auto 0
+                &::after
+                    background: #020d2b
                 &:hover
                     &::before
                         font-weight: 700

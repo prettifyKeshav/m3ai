@@ -240,7 +240,7 @@
   }
 }
 .home-secB .swiper {
-  margin: 50px 0 40px 0;
+  margin: 50px 0 0px 0;
 }
 @media only screen and (max-width: 540px) {
   .home-secB .swiper {
@@ -601,6 +601,9 @@
   .home-secC .flex-box .flex-box-item:last-child a {
     margin: 40px auto 0;
   }
+}
+.home-secC .flex-box .flex-box-item:last-child a::after {
+  background: #020d2b;
 }
 .home-secC .flex-box .flex-box-item:last-child a:hover::before {
   font-weight: 700;

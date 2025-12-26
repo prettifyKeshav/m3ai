@@ -18,7 +18,7 @@ const VisionMission = () => {
               <div className="content">
                 <h4>Mission</h4>
                 <p>Commitment to understanding the problem, gaining domain expertise, only
-                  then exploring a solution </p>
+                  then exploring a solution.</p>
               </div>
             </div>
 
@@ -28,7 +28,7 @@ const VisionMission = () => {
               </figure>
               <div className="content">
                 <h4>Vision</h4>
-                <p>Become a trusted and notable AI technology partner across industries, combining deep domain knowledge with powerful automation tools</p>
+                <p>Become a trusted and notable AI technology partner across industries, combining deep domain knowledge with powerful automation tools.</p>
               </div>
             </div>
 

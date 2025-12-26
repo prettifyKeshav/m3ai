@@ -57,7 +57,6 @@ const ServiceSection = () => {
         }
     ]
 
-
     return (
         <>
             <div className="home-secB">
@@ -88,7 +87,6 @@ const ServiceSection = () => {
                         className="mySwiper"
                         data-animate="zoom-in"
                     >
-
                         {
                             Service_data.map((item, index) => {
                                 return (

@@ -25,11 +25,11 @@ const AboutSection = () => {
                         <div className="flex-box-item" data-animate="fade-up">
                             <div className="col">
                                 <h4>Mission</h4>
-                                <p>Commitment to understanding the problem, gaining domain expertise, only then exploring a solution</p>
+                                <p>Commitment to understanding the problem, gaining domain expertise, only then exploring a solution.</p>
                             </div>
                             <div className="col">
                                 <h4>Vision</h4>
-                                <p>Become a trusted and notable AI technology partner across industries, combining deep domain knowledge with powerful automation tools</p>
+                                <p>Become a trusted and notable AI technology partner across industries, combining deep domain knowledge with powerful automation tools.</p>
                             </div>
                         </div>
                     </div>

@@ -88,8 +88,8 @@
             &:hover
                 background: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
                 .main-icon
-                    svg path
-                        fill: $white
+                    img
+                        filter: brightness(0) invert(1)
                 .content
                     figure
                         margin: 60px 0 0 auto
@@ -102,6 +102,7 @@
                     height: 100%
                     width: 100%
                     object-fit: contain
+                    transition: 0.3s ease
                     path
                         fill:  #55A5D9
                         transition: 0.5s ease
@@ -472,8 +473,8 @@
                 &:hover
                     background: linear-gradient(90deg, #3853A3 19.23%, #55A5D9 66.83%, #57DDE6 94.23%)
                     .main-icon
-                        svg path
-                            fill: $white
+                        img
+                            filter: brightness(0) invert(1)
                     .content
                         figure
                             margin: 60px 0 0 auto
@@ -486,6 +487,7 @@
                         height: 100%
                         width: 100%
                         object-fit: contain
+                        transition: 0.3s ease
                         path
                             fill:  #55A5D9
                             transition: 0.5s ease

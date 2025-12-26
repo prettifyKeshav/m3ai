@@ -69,7 +69,6 @@ const ServiceSection = () => {
 
                     <Swiper
                         loop={true}
-                        slidesPerView={1.5}
                         breakpoints={{
                             0: { slidesPerView: 1 },
                             540: { slidesPerView: 1 },

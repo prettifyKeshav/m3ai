@@ -49,7 +49,7 @@ export default function Footer() {
 
                         <div className="contact">
                             <h6>Connect us</h6>
-                            <Link href="tel:+910000000000">+91 - 000 000 0000</Link>
+                            <Link href="tel:+911244130500">+91 124 4130500</Link>
                         </div>
                     </div>
                     <div className="colB">

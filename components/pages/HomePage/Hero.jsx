@@ -9,7 +9,7 @@ const Hero = () => {
                 mediaSrc="video"
                 videoSrc={"/assets/video/home-banner.mp4"}
                 h3tag={"Where Complex Challenges"}
-                h1tag={"Meet M3Ai"}
+                h1tag={"Meet M3AI"}
             />
         </>
     )

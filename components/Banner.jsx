@@ -22,7 +22,7 @@ export default function Banner({
                     {mediaSrc === "video" && videoSrc ? (
                         <video className="bg-media" playsInline autoPlay muted loop> <source src={videoSrc} type="video/mp4" /> </video>
                     ) : imageSrc ? (
-                        <Image src={imageSrc} width={1280} height={720} alt={imageAlt || "Banner Background"} />
+                        <Image src={imageSrc} width={1920} height={1023} alt={imageAlt || "Banner Background"} />
                     ) : null}
                 </figure>
 

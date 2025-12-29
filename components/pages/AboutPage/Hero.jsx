@@ -8,8 +8,8 @@ const Hero = () => {
                 className='about-banner'
                 mediaSrc="video"
                 videoSrc={"/assets/video/about-banner.mp4"}
-                h1tag={"About M3Ai"}
-                h3tag2={"Enterprise AI. Engineered for real-world impact"}
+                h1tag={"About M3AI"}
+                // h3tag2={"Enterprise AI. Engineered for real-world impact"}
             />
         </>
     )

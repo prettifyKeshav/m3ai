@@ -18,7 +18,7 @@ export const metadata = {
       {
         rel: "icon",
         type: "image/svg+xml",
-        url: "/assets/icon/favicon/favicon.svg",
+        url: "/assets/icon/favicon/favicon.ico",
       },
       {
         rel: "manifest",

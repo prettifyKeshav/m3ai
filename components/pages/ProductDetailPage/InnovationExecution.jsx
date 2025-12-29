@@ -11,11 +11,11 @@ const InnovationExecution = () => {
         <>
             <div className="product-details-secA">
                 <div className="container">
-                    <div className="heading" data-animate="zoom-in">
+                    <div className="heading" data-animate="fade-up">
                         <h2>Where Innovation Meets Execution</h2>
                     </div>
 
-                    <figure data-animate="zoom-in">
+                    <figure data-animate="fade-up">
                         <Image src="/assets/images/product/Innovation-Execution.jpg" width={798} height={453} alt="i" ></Image>
 
                         <div className="play-button" onClick={openVideo} data-video="https://www.youtube.com/embed/EG3n3TRMDXo?si=4HqoHycaR7RSPV3z">

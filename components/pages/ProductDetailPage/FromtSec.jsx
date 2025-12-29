@@ -6,13 +6,13 @@ const FromtSec = () => {
             <div className="product-detail-secC">
                 <div className="container">
                     <form action="">
-                        <div className="heading"  data-animate="zoom-in">
+                        <div className="heading">
                             <figure>
                                 <Image src="/assets/logo-white.svg" height={45} width={131} alt="white logo" ></Image>
                             </figure>
                             <h3>Let’s build your AI-powered future together</h3>
                         </div>
-                        <div className="form form-grid"  data-animate="fade-up"> 
+                        <div className="form form-grid"> 
                             <div className="form-group">
                                 <input type="text" className="form-control" />
                                 <label htmlFor="">Name*</label>

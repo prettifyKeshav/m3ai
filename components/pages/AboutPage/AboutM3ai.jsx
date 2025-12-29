@@ -7,7 +7,7 @@ const AboutM3ai = () => {
                 <div className="flex-box">
                     <div className="flex-box-item" data-animate="fade-up">
                         <figure>
-                            <Image src="/assets/images/m3ai-icon.svg" height={138} width={397} alt="m3ai icon"></Image>
+                            <Image src="/assets/images/m3ai-icon.png" height={138} width={397} alt="m3ai icon"></Image>
                         </figure>
                     </div>
 

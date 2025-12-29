@@ -31,7 +31,7 @@
   height: 100%;
 }
 .banner.about-banner .banner-wrapper {
-  bottom: 34%;
+  bottom: 40%;
 }
 @media only screen and (max-width: 540px) {
   .banner.about-banner .banner-wrapper {
@@ -317,7 +317,7 @@
     padding: 30px 0 0 0;
   }
 }
-.about-secC .our-work-swiper .swiper-slide a {
+.about-secC .our-work-swiper .swiper-slide .card {
   display: inline-block;
   padding: 60px 20px;
   border-radius: 10px;
@@ -325,7 +325,7 @@
   height: 298px;
   transition: 0.5s ease;
 }
-.about-secC .our-work-swiper .swiper-slide a:hover {
+.about-secC .our-work-swiper .swiper-slide .card:hover {
   border: 1px solid #55A5D9;
 }
 .about-secC .our-work-swiper .swiper-slide h3 {
@@ -346,7 +346,6 @@
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
-  max-width: 206px;
   margin: auto;
   margin-bottom: 10px;
 }

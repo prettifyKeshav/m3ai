@@ -14,31 +14,26 @@ const WorkMethodology = () => {
             "id": "01",
             "title": "Discovery & Requirement Analysis",
             "description": "Engage with stakeholders to define objectives, success metrics, and integration needs",
-            "link": "/"
         },
         {
             "id": "02",
             "title": "Solution Blueprinting",
             "description": "Create BRD/FRD, map workflows, architecture, and compliance frameworks",
-            "link": "/"
         },
         {
             "id": "03",
             "title": "Data Preparation & Model Development ",
             "description": "Clean and structure data; build PoC and custom AI models tailored to enterprise requirements",
-            "link": "/"
         },
         {
             "id": "04",
             "title": "Testing & Deployment",
             "description": "Validate performance, security, and compliance; integrate seamlessly into enterprise systems",
-            "link": "/"
         },
         {
             "id": "05",
-            "title": "Discovery & Requirement Analysis",
-            "description": "Engage with stakeholders to define objectives, success metrics, and integration needs",
-            "link": "/"
+            "title": "Monitoring & Continuous Optimization",
+            "description": "Track KPIs,retrain models, and implement governance for scalability and sustained performance",
         }
     ]
 
@@ -47,7 +42,7 @@ const WorkMethodology = () => {
         <>
             <div className="about-secC">
                 <div className="container">
-                    <div className="heading" data-animate="zoom-in">
+                    <div className="heading" data-animate="fade-up">
                         <h2>Our Work Methodology</h2>
                     </div>
                     <div className="our-work-swiper">
@@ -84,11 +79,11 @@ const WorkMethodology = () => {
                                 Our_Work.map((item, index) => {
                                     return (
                                         <SwiperSlide key={index}>
-                                            <Link href={item.link}>
+                                            <div className="card">
                                                 <h3>{item.id}</h3>
                                                 <h4>{item.title}</h4>
                                                 <p>{item.description}</p>
-                                            </Link>
+                                            </div>
                                         </SwiperSlide>
                                     )
                                 })

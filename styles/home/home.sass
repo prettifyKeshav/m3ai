@@ -335,8 +335,9 @@
                 max-width: 90%
             .heading
                 position: relative
-                width: fit-content
                 margin: auto
+                @include media(768)
+                    width: fit-content
                 &::before
                     content: ""
                     position: absolute

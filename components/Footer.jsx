@@ -24,7 +24,7 @@ export default function Footer() {
                                 <figure>
                                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.502 4.257A2 2 0 0 0 7.646 3H4.895A1.895 1.895 0 0 0 3 4.895C3 13.789 10.21 21 19.106 21A1.895 1.895 0 0 0 21 19.105v-2.751a2 2 0 0 0-1.257-1.857l-2.636-1.054a2 2 0 0 0-2.023.32l-.68.568a2 2 0 0 1-2.696-.122L9.792 12.29a2 2 0 0 1-.123-2.694l.567-.68a2 2 0 0 0 .322-2.024z"></path></svg>
                                 </figure>
-                                Get in Touch M3Ai
+                                Get in Touch M3AI
                             </button>
 
                             <Link href="/">
@@ -57,13 +57,13 @@ export default function Footer() {
                             <div className="flex-box-item">
                                 <h6>Services</h6>
                                 <ul>
-                                    <li><Link href="/">AI workflows orchestration</Link></li>
-                                    <li><Link href="/">Finetuning pretrained models</Link></li>
-                                    <li><Link href="/">AI native product development</Link></li>
-                                    <li><Link href="/">Data analytics</Link></li>
-                                    <li><Link href="/">Data intelligence</Link></li>
-                                    <li><Link href="/">Agentic architecture</Link></li>
-                                    <li><Link href="/">Custom SLMs</Link></li>
+                                    <li><Link href="/service-detail">AI workflows orchestration</Link></li>
+                                    <li><Link href="/service-detail">Finetuning pretrained models</Link></li>
+                                    <li><Link href="/service-detail">AI native product development</Link></li>
+                                    <li><Link href="/service-detail">Data analytics</Link></li>
+                                    <li><Link href="/service-detail">Data intelligence</Link></li>
+                                    <li><Link href="/service-detail">Agentic architecture</Link></li>
+                                    <li><Link href="/service-detail">Custom SLMs</Link></li>
                                 </ul>
                             </div>
 
@@ -72,8 +72,8 @@ export default function Footer() {
                                 <ul>
                                     <li><Link href="/product">Products</Link></li>
                                     <li><Link href="/industrie">Industries</Link></li>
-                                    <li><Link href="/about-us">About M3Ai</Link></li>
-                                    <li><Link href="/">Insights</Link></li>
+                                    <li><Link href="/about-us">About M3AI</Link></li>
+                                    {/* <li><Link href="/">Insights</Link></li> */}
                                     <li><Link href="/contact-us">Contact us</Link></li>
                                 </ul>
                             </div>
@@ -81,7 +81,7 @@ export default function Footer() {
                     </div>
                     <div className="colC">
                         <div className="form form-grid">
-                            <h6>What's New at M3Ai newsletter subscription</h6>
+                            <h6>What's New at M3AI newsletter subscription</h6>
                             <form action="">
 
                                 <div className="form-group">
@@ -99,13 +99,13 @@ export default function Footer() {
                         </div>
 
                         <figure>
-                            <Image className="footer-logo" src="/assets/images/m3ai-icon.svg" width={397} height={138} alt="footer logo" ></Image>
+                            <Image className="footer-logo" src="/assets/images/m3ai-icon.png" width={397} height={138} alt="footer logo" ></Image>
                         </figure>
                     </div>
                 </div>
 
                 <div className="bottom-footer container">
-                    <p>&copy; M3Ai. All rights reserved.&nbsp; <b className="none">|</b> &nbsp;
+                    <p>&copy; M3AI. All rights reserved.&nbsp; <b className="none">|</b> &nbsp;
                         <Link href="https://www.prettifycreative.com/" target="_blank">
                             <span className="madeby"> Made by :
                                 <span>

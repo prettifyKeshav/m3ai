@@ -6,9 +6,9 @@ const Hero = () => {
         <Banner
             className="service-banner"
             mediaSrc="video"
-            videoSrc="/assets/video/service-banner.mp4"
+            videoSrc="/assets/video/common-banner.mp4"
             h1tag="Services"
-            h3tag2="Simplifying work to amplify outcomes"
+            // h3tag2="Simplifying work to amplify outcomes"
         />
     )
 }

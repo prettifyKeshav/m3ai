@@ -137,7 +137,7 @@ const PoweredImpact = () => {
         <>
             <div className="home-secD">
                 <div className="container">
-                    <div className="heading" data-animate="zoom-in">
+                    <div className="heading" data-animate="fade-up">
                         <h2>AI-Powered Impact Across Sectors</h2>
                     </div>
 

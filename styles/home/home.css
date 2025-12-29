@@ -465,9 +465,13 @@
 }
 .home-secC .flex-box .flex-box-item:last-child .heading {
   position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
   margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .home-secC .flex-box .flex-box-item:last-child .heading {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .home-secC .flex-box .flex-box-item:last-child .heading::before {
   content: "";

@@ -10,12 +10,12 @@ const AboutSection = () => {
                     <div className="flex-box">
                         <div className="flex-box-item" data-animate="fade-up">
                             <figure>
-                                <Image src="/assets/images/m3ai-icon.svg" height={138} width={397} alt="m3ai icon"></Image>
+                                <Image src="/assets/images/m3ai-icon.png" height={138} width={397} alt="m3ai icon"></Image>
                             </figure>
 
-                            <p>M3Ai is an enterprise AI company that specializes in high-tech solutions for diverse industry problems. We partner with organizations in banking, consulting, commercial real estate and more to tackle challenges through intelligent automation, predictive insights, and scalable AI platforms.</p>
+                            <p>M3AI is an enterprise AI company that specializes in high-tech solutions for diverse industry problems. We partner with organizations in banking, consulting, commercial real estate and more to tackle challenges through intelligent automation, predictive insights, and scalable AI platforms.</p>
                             
-                            <Link href="">
+                            <Link href="/about-us">
                                 Read More
                                 <figure>
                                     <Image src="/assets/icon/top-right.svg" width={16} height={16} alt="top right ico"></Image>

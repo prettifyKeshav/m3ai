@@ -4,13 +4,13 @@ const FromtSec = () => {
     return (
         <>
             <form action="">
-                <div className="heading" data-animate="zoom-in">
-                    <figure>
+                <div className="heading" >
+                    {/* <figure>
                         <Image src="/assets/logo-white.svg" height={45} width={131} alt="white logo" ></Image>
-                    </figure>
+                    </figure> */}
                     <h3>Let’s build your AI-powered future together</h3>
                 </div>
-                <div className="form form-grid" data-animate="fade-up">
+                <div className="form form-grid">
                     <div className="form-group">
                         <input type="text" className="form-control" />
                         <label htmlFor="">Name*</label>

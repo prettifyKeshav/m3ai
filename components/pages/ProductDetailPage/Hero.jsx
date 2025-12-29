@@ -39,7 +39,7 @@ const Hero = () => {
                             </div>
 
                             <div className="features-swiper-slider">
-                                <div className="head" data-animate="zoom-in">
+                                <div className="head" data-animate="fade-up">
                                     <h3>Features</h3>
                                     <div className="swiper-nav">
                                         <button className='our-work-left-swiper-slide'>
@@ -68,7 +68,7 @@ const Hero = () => {
                                         nextEl: ".our-work-right-swiper-slide",
                                     }}
                                     modules={[Navigation]}
-                                    data-animate="zoom-in"
+                                    data-animate="fade-up"
                                 >
                                     {
                                         Features_Data.map((item, index) => {

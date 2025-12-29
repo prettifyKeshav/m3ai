@@ -36,14 +36,14 @@ const ProductSection = () => {
         <>
             <div className="home-secC">
                 <div className="container">
-                    <div className="heading" data-animate="zoom-in">
-                        <h2>M3Ai  Products</h2>
+                    <div className="heading" data-animate="fade-up">
+                        <h2>M3AI  Products</h2>
                     </div>
 
                     <div className="flex-box">
                         <div className="flex-box-item" data-animate="fade-up">
                             <figure>
-                                <Image className='up-im' src="/assets/images/home/Products-sec1.png" height={382} width={453} alt="3d img"></Image>
+                                <Image className='up-im' src="/assets/images/home/Products-sec11.svg" height={382} width={453} alt="3d img"></Image>
                                 <Image className='lw-im' src="/assets/images/home/Products-sec2.png" height={382} width={453} alt="3d img"></Image>
                             </figure>
                         </div>
@@ -95,7 +95,7 @@ const ProductSection = () => {
                                 </Swiper>
                             </div>
 
-                            <Link href="" className='btn' data="Read More">
+                            <Link href="/product" className='btn' data="Read More">
                                 <figure>
                                     <svg xmlns="http://www.w3.org/2000/svg" width={1024} height={1024} viewBox="0 0 1024 1024"><path fill="#000" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"></path><path fill="#000" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"></path></svg>
                                 </figure>

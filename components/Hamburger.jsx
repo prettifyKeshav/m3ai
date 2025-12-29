@@ -11,9 +11,9 @@ export default function Hamburger() {
   const [activeIndex, setActiveIndex] = useState(null)
 
   const menuItems = [
-    { id: 1, title: "About M3Ai", href: "/about-us", subitems: [] },
-    { id: 2, title: "M3Ai Services", href: "/service", subitems: [] },
-    { id: 3, title: "M3Ai Products", href: "/product", subitems: [] },
+    { id: 1, title: "About M3AI", href: "/about-us", subitems: [] },
+    { id: 2, title: "M3AI Services", href: "/service", subitems: [] },
+    { id: 3, title: "M3AI Products", href: "/product", subitems: [] },
     { id: 4, title: "Contact Us", href: "/contact-us", subitems: [] },
   ];
 
@@ -26,7 +26,7 @@ export default function Hamburger() {
       </button>
       <div className="model-body">
         <div className="icon">
-          <Image src="/assets/images/m3ai-icon.svg" width="50" height="50" className="svg" alt="icon" />
+          <Image src="/assets/images/m3ai-icon.png" width="50" height="50" className="svg" alt="icon" />
         </div>
 
         <nav>

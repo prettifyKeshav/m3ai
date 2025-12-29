@@ -7,7 +7,7 @@ const Hero = () => {
             <Banner
                 className="industries-banner"
                 mediaSrc="video"
-                videoSrc={"/assets/video/about-banner.mp4"}
+                videoSrc={"/assets/video/common-banner.mp4"}
                 h3tag="For all industries, we are ready to deliver enterprise‑grade automation, cutting redundant workflows and unlocking productivity at scale"
             />
         </>

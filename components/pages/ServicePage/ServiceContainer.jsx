@@ -26,7 +26,7 @@ const ServiceContainer = () => {
         {
             "link": "/service-detail",
             "icon": "/assets/images/service/listing/3.svg",
-            "title": "AData Analytics",
+            "title": "Data Analytics",
             "description": "AI workflows orchestration empowers organizations to automate.",
         },
         {

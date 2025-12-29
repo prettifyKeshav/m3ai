@@ -6,14 +6,14 @@ const VisionMission = () => {
     <>
       <div className="about-secB">
         <div className="container">
-          <div className="heading" data-animate="zoom-in">
+          <div className="heading" data-animate="fade-up">
             <h2>Simplifying work to <span>amplify</span> outcomes</h2>
           </div>
 
           <div className="flex-box">
             <div className="flex-box-item" data-animate="fade-up">
               <figure>
-                <Image src="/assets/images/About/vision.svg" width={58} height={58} alt='ico'></Image>
+                <Image src="/assets/images/About/mission.svg" width={58} height={58} alt='ico'></Image>
               </figure>
               <div className="content">
                 <h4>Mission</h4>
@@ -24,7 +24,7 @@ const VisionMission = () => {
 
             <div className="flex-box-item" data-animate="fade-up">
               <figure>
-                <Image src="/assets/images/About/mission.svg" width={58} height={58} alt='ico'></Image>
+                <Image src="/assets/images/About/vision.svg" width={58} height={58} alt='ico'></Image>
               </figure>
               <div className="content">
                 <h4>Vision</h4>

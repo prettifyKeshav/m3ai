@@ -11,37 +11,37 @@ const MoreProducts = () => {
 
     const More_Product_Data = [
         {
-            link: "/service-detail",
+            link: "/product-detail",
             image: "/assets/images/product/product2.jpg",
             title: "Product 1",
             description: "Lorem Ipsum is simply dummy text",
         },
         {
-            link: "/service-detail",
+            link: "/product-detail",
             image: "/assets/images/product/product2.jpg",
             title: "Product 2",
             description: "Lorem Ipsum is simply dummy text",
         },
         {
-            link: "/service-detail",
+            link: "/product-detail",
             image: "/assets/images/product/product2.jpg",
             title: "Product 3",
             description: "Lorem Ipsum is simply dummy text",
         },
         {
-            link: "/service-detail",
+            link: "/product-detail",
             image: "/assets/images/product/product2.jpg",
             title: "Product 4",
             description: "Lorem Ipsum is simply dummy text",
         },
         {
-            link: "/service-detail",
+            link: "/product-detail",
             image: "/assets/images/product/product2.jpg",
             title: "Product 5",
             description: "Lorem Ipsum is simply dummy text",
         },
         {
-            link: "/service-detail",
+            link: "/product-detail",
             image: "/assets/images/product/product2.jpg",
             title: "Product 6",
             description: "Lorem Ipsum is simply dummy text",
@@ -53,7 +53,7 @@ const MoreProducts = () => {
         <>
             <div className="product-detail-secD">
                 <div className="container">
-                    <div className="heading" data-animate="zoom-in">
+                    <div className="heading">
                         <h2>More Product</h2>
                     </div>
 
@@ -86,13 +86,12 @@ const MoreProducts = () => {
                                 nextEl: ".more-services-right-swiper-slide",
                             }}
                             modules={[Navigation]}
-                            data-animate="fade-up"
                         >
                             {
                                 More_Product_Data.map((item, index) => {
                                     return (
                                         <SwiperSlide key={index}>
-                                            <Link href="/" className='grid-box-item'>
+                                            <Link href={item.link} className='grid-box-item'>
                                                 <figure>
                                                     <Image src={item.image} width={522} height={318} alt="ico" ></Image>
                                                 </figure>

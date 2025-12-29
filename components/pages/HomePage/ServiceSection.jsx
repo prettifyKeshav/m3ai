@@ -16,41 +16,41 @@ const ServiceSection = () => {
 
     const Service_data = [
         {
-            "link": "",
+            "link": "/service",
             "image": "/assets/images/service/service-img1.jpg",
             "title": "AI workflows orchestration",
             "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
 
         },
         {
-            "link": "",
+            "link": "/service",
             "image": "/assets/images/service/service-img2.jpg",
             "title": "AI workflows orchestration",
             "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
 
         },
         {
-            "link": "",
+            "link": "/service",
             "image": "/assets/images/service/service-img3.jpg",
             "title": "AI workflows orchestration",
             "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
 
         },
         {
-            "link": "",
+            "link": "/service",
             "image": "/assets/images/service/service-img2.jpg",
             "title": "AI workflows orchestration",
             "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
         },
         {
-            "link": "",
+            "link": "/service",
             "image": "/assets/images/service/service-img3.jpg",
             "title": "AI workflows orchestration",
             "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
 
         },
         {
-            "link": "",
+            "link": "/service",
             "image": "/assets/images/service/service-img2.jpg",
             "title": "AI workflows orchestration",
             "description": "AI workflows orchestration empowers organizations to automate, coordinate, and optimize complex processes by connecting multiple AI models, tools, and data systems.",
@@ -61,7 +61,7 @@ const ServiceSection = () => {
         <>
             <div className="home-secB">
                 <div className="container">
-                    <div className="heading" data-animate="zoom-in">
+                    <div className="heading" data-animate="fade-up">
                         <h2>Where AI Automation
                             Accelerates Your Growth</h2>
                     </div>
@@ -85,7 +85,7 @@ const ServiceSection = () => {
                         }}
                         modules={[Pagination, Navigation]}
                         className="mySwiper"
-                        data-animate="zoom-in"
+                        data-animate="fade-up"
                     >
                         {
                             Service_data.map((item, index) => {

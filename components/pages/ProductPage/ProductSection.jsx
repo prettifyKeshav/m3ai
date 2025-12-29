@@ -19,10 +19,6 @@ const ProductSection = () => {
                 text: "Read More",
                 link: "/product-detail"
             },
-            animation: {
-                image: "fade-right",
-                content: "fade-left"
-            }
         },
         {
             id: 2,
@@ -38,10 +34,6 @@ const ProductSection = () => {
                 text: "Read More",
                 link: "/product-detail"
             },
-            animation: {
-                image: "fade-right",
-                content: "fade-left"
-            }
         },
         {
             id: 3,
@@ -57,14 +49,9 @@ const ProductSection = () => {
                 text: "Read More",
                 link: "/product-detail"
             },
-            animation: {
-                image: "fade-right",
-                content: "fade-left"
-            }
         },
 
         /* 🔥 NEW ITEMS */
-
         {
             id: 4,
             layout: "image-right",
@@ -79,10 +66,6 @@ const ProductSection = () => {
                 text: "Read More",
                 link: "/product-detail"
             },
-            animation: {
-                image: "fade-right",
-                content: "fade-left"
-            }
         },
         {
             id: 5,
@@ -98,10 +81,6 @@ const ProductSection = () => {
                 text: "Read More",
                 link: "/product-detail"
             },
-            animation: {
-                image: "fade-right",
-                content: "fade-left"
-            }
         },
         {
             id: 6,
@@ -117,10 +96,6 @@ const ProductSection = () => {
                 text: "Read More",
                 link: "/product-detail"
             },
-            animation: {
-                image: "fade-right",
-                content: "fade-left"
-            }
         },
         {
             id: 7,
@@ -136,10 +111,6 @@ const ProductSection = () => {
                 text: "Read More",
                 link: "/product-detail"
             },
-            animation: {
-                image: "fade-right",
-                content: "fade-left"
-            }
         }
     ]
 
@@ -154,7 +125,7 @@ const ProductSection = () => {
                         <div key={item.id} className={isImageLeft ? "flex-box1" : "flex-box2"} >
                             {/* Image Left */}
                             {isImageLeft && (
-                                <div className="flex-box-item1 flex-box-item" data-animate={item.animation.image} >
+                                <div className="flex-box-item1 flex-box-item" >
                                     <figure>
                                         <Image src={item.productimage} width={522} height={318} alt="product img" />
                                     </figure>
@@ -162,16 +133,14 @@ const ProductSection = () => {
                             )}
 
                             {/* Content */}
-                            <div className="flex-box-item2 flex-box-item" data-animate={item.animation.content} >
+                            <div className="flex-box-item2 flex-box-item">
                                 <div className="heading">
                                     <h2>{item.content.title}</h2>
                                     <p>{item.content.subtitle}</p>
                                 </div>
-
                                 <p className="desc">
                                     {item.content.description}
                                 </p>
-
                                 <Link href={item.button.link} className="btn" data={item.button.text} >
                                     <figure>
                                         <svg xmlns="http://www.w3.org/2000/svg" width={1024} height={1024} viewBox="0 0 1024 1024" > <path fill="#000" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z" /> <path fill="#000" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z" /></svg>
@@ -181,7 +150,7 @@ const ProductSection = () => {
 
                             {/* Image Right */}
                             {!isImageLeft && (
-                                <div className="flex-box-item1 flex-box-item" data-animate={item.animation.image} >
+                                <div className="flex-box-item1 flex-box-item"  >
                                     <figure>
                                         <Image src={item.productimage} width={522} height={318} alt="product img" />
                                     </figure>

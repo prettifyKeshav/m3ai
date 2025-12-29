@@ -36,9 +36,9 @@ const Header = () => {
 
                         <nav className="colB header__nav">
                             <ul className="nav-list">
-                                <li><Link href="about-us">About M3Ai</Link></li>
-                                <li><Link href="service">M3Ai Services</Link></li>
-                                <li><Link href="product">M3Ai Products</Link></li>
+                                <li><Link href="about-us">About M3AI</Link></li>
+                                <li><Link href="service">M3AI Services</Link></li>
+                                <li><Link href="product">M3AI Products</Link></li>
                                 <li><Link href="industrie">Industries</Link></li>
                             </ul>
                         </nav>

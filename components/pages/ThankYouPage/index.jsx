@@ -10,7 +10,7 @@ const ThankYouPage = () => {
                 <section className='thanks-banner'>
                     <div className="content text-center">
                         <div className="logo">
-                            <Image src="/assets/images/m3ai-icon.svg" width={397} height={138} alt='error image'></Image>
+                            <Image src="/assets/images/m3ai-icon.png" width={397} height={138} alt='error image'></Image>
                         </div>
 
                         <h1>Thank You!</h1>

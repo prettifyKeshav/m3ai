@@ -36,9 +36,11 @@ const TermsConditionsPage = () => {
                             <h4>Contact Us</h4>
                             <p>If you have any questions or concerns about this Website Usage Agreement, please contact us at:</p>
                             <ul>
-                                <li><b>Call us:</b> <Link href="tel:+911234567890">+91-1234567890</Link></li>
-                                <li><b>Email:</b> <Link href="mailto:template@gmail.com">template@gmail.com</Link></li>
-                                <li><b>Location:</b> <Link href="https://maps.app.goo.gl/placeholder" target="_blank">Unit No. 123, AI Tower, Tech Zone, Gurugram, Haryana 122018</Link></li>
+                                <li><b>Call us:</b> <Link href="tel:+911244130500">+91 124 4130500</Link></li>
+                                <li><b>Email:</b> <Link href="mailto:info@mthree.ai">info@mthree.ai</Link></li>
+                                <li><b>Location:</b> <Link href="https://maps.app.goo.gl/placeholder" target="_blank">Block 3A, 4th Floor, DLF Corporate Park, M. G. Road, Gurugram – 122002
+
+</Link></li>
                             </ul>
                             <p><strong>This Terms &amp; Conditions was last updated on 23/12/2025</strong></p>
 

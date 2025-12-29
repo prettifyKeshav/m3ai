@@ -61,10 +61,10 @@ const PrivacyPolicyPage = () => {
                                     <li>Object to or restrict certain data processing activities.</li>
                                     <li>Withdraw your consent at any time, where applicable.</li>
                                 </ul>
-                                <p>To exercise your rights or for any privacy-related inquiries, please contact us at <a className="text-white" href="tel:911234567890">+91-1234567890</a>.</p>
+                                <p>To exercise your rights or for any privacy-related inquiries, please contact us at <a className="text-white" href="tel:+911244130500">+91 124 4130500</a>.</p>
                                 <h3>Changes to This Privacy Policy</h3>
                                 <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Any updates will be posted on this page with the updated effective date.</p>
-                                <p>For more information or assistance, please contact M3AI at <Link className="text-white" href="tel:911234567890">+91-1234567890</Link>.</p>
+                                <p>For more information or assistance, please contact M3AI at <Link className="text-white" href="tel:+911244130500">+91 124 4130500</Link>.</p>
                             </div>
                         </div>
                     </div>
